@@ -1,0 +1,278 @@
+---
+title: Presentation Speech Draft
+author: Shubin Xue
+lang: en
+
+format:
+  pdf: default
+---
+
+Good [morning/afternoon/evening], everyone. I am Shubin Xue from Beijing Institute of Technology. Today, It’s my pleasure to present my talk on Classification of Quadratic Forms over $\mathbb{Q}$.
+
+\
+**[Next Page]**
+\
+
+My presentation will be divided into two main parts:
+
+First, I will discuss the primary motivations and standard approaches to this problem.
+
+Second, I will show the classification of quadratic forms over the field $\mathbb{Q}_p$.
+
+The third part is an appendix about classification results and the proof of the Hasse-Minkowski theorem.
+
+\
+**[Next Page]**
+\
+
+Before we begin, let me outline some notation:
+
+- $K$ will denote an arbitrary field.
+
+- $X$, $Y$, $Z$ are used as variables.
+
+- $\mathbb{P}$ denotes the set of all prime numbers. $\mathbb{Q}_p$ is the $p$-adic completion of $\mathbb{Q}$.
+
+- $\mathbb{V}$ denotes the set of all primes together with infinity. $\mathbb Q_\infty$ is just $\mathbb{R}$.
+
+- We will often denote by the same letter an element and its class modulo.
+
+\
+**[Next Page]**
+\
+
+Now, let us begin with the first part.
+
+\
+**[Next Page]**
+\
+
+In the part, I hope to show you the relationship between the classification problem and the representation problem.
+
+\
+**[Next Page]**
+\
+
+First, let us clarify our object of study:
+
+The sum of $a_{ij}X_iX_j$ is a quadratic form. 
+
+The matrix $A_f$ corresponding to $f$ is a symmetric matrix. $f(X)$ can be written as a product of vectors and matrices.
+
+The pair $(K^n, f)$ is called a quadratic space. We say $f$ is equivalent to $g$ if there exists an invertible matrix $P$ such that $A_f$ is congruent to $A_g$.
+
+If $f$ is a quadratic form in $n$ variables and $g$ is a quadratic form in $m$ variables, we denote by $f \oplus g$ the quadratic form in $n+m$ variables given by their direct sum.
+
+\
+**[Next Page]**
+\
+
+As early as the early development of number theory, mathematicians began to pay attention to the representation problem of quadratic forms.
+
+In the 17th century, Fermat proposed the two-square theorem, which was later proved by Euler. And Euler also raised the three-square problem, but the connection between the representation problem and the classification problem was not yet noticed.
+
+In the 19th century, mathematicians gradually discovered subtle connections between these problems.
+
+Gauss was the first to introduce the idea of classification into the study of quadratic forms. He pointed out that represention of numbers are invariants for the classification of quadratic forms.
+
+Later, in the 20th century, Hasse, building on Minkowski's work, proposed the “local-global principle” for quadratic forms over the rational numbers.
+
+$f$ represents $0$ over $\mathbb{Q}$ if and only if it represents $0$ over all $\mathbb{Q}_v$.
+
+This fully established the link between “classification” and “representation”.
+
+\
+**[Next Page]**
+\
+
+If there exists a nonzero element $x \in K^n$ such that $f(x) = a$, we say that $f$ represents $a$.
+
+For an element $a$ in $K$, $f$ represents $a$ if and only if
+- $f \sim f_1 \oplus aZ^2$
+- $f_a=f \oplus -aZ^2$ represents $0$.
+
+Item 3 allows us to reduce the problem of $f$ representing $a$ to the problem of $f_a$ representing $0$.
+
+Item 2 allows us to decompose the quadratic form by rank.
+
+Applying the Hasse-Minkowski theorem to $f_a$, we can directly obtain that $f$ represents $a$ over $\mathbb{Q}$ if and only if it represents $a$ over all $p$-adic fields.
+
+\
+**[Next Page]**
+\
+
+Next, I want to show you why the Hasse-Minkowski theorem establishes the link between “classification” and “representation”.
+
+\
+**[Next Page]**
+\
+
+If two quadratic forms are equivalent, and one summand is the same, then the other summand must also be equivalent.
+
+We can consider this from the perspective of quadratic spaces. In fact, if there are isomorphic subspaces, then the isomorphism can be extended to an automorphism of the whole space. Finally, by restricting to the orthogonal complement of the subspace, we obtain an isomorphism of the complement.
+
+\
+**[Next Page]**
+\
+
+Now, let us have a look at the conditions for equivalence over $\mathbb{Q}$.
+
+Non-degenerate quadratic forms of rank $n$ over $\mathbb{Q}$ are equivalent if and only if they are equivalent over all $\mathbb{Q}_v$.
+
+Necessity of this result is clear, so we only need to consider sufficiency.
+
+
+
+We can take a rational number $a$ represented by $f$.
+
+Then $f$ represents $a$ over all $\mathbb Q_v$. Since We have $f$ and $g$ are equivalent over all $\mathbb{Q}_v$, then $g$ represents $a$ over all $\mathbb Q_v$.
+
+By the Hasse-Minkowski theorem, $a$ can be represented over $\mathbb{Q}$ by both $f$ and $g$. Thus, we can decompose $f \sim f_1 \oplus aZ^2$ and $g \sim g_1 \oplus aZ^2$. (We have $f \sim g$ over all $\mathbb{Q}_v$, and clearly $aZ^2 \sim aZ^2$.) By Witt's cancellation theorem, we know that $f_1 \sim g_1$ over all $\mathbb{Q}_v$. By induction, $f_1 \sim g_1$ over $\mathbb{Q}$. Hence, $f \sim g$ over $\mathbb{Q}$.
+
+\
+**[Next Page]**
+\
+
+Now we have successfully reduced the global classification problem to a local one, so next we need to work over local fields.
+
+\
+**[Next Page]**
+\
+
+Let’s first look at some general ideas.
+
+\
+**[Next Page]**
+\
+
+It suffices to classify non-degenerate diagonal quadratic forms of rank $n$ with square-free coefficients.
+
+- The rank is always an invariant.
+
+- Symmetric matrix can always be diagonalized.
+
+- Squared factors in the coefficients do not affect the classification of quadratic forms.
+
+On the other hand, by considering the determinant of the matrix, we notice that the image of $\det(A)$ in $K^\times/(K^\times)^2$ is an invariant. We call it the discriminant.
+
+Our work has now been reduced to squared-free, so we need to know its group structure.
+
+For $\mathbb{R}$, it's $\{1, -1\}$.
+
+For $\mathbb{Q}_p$, it's the Klein four-group $K_4$.
+
+\
+**[Next Page]**
+\
+
+The classification over $\mathbb{R}$ is completely determined by the rank and the signature, which is the famous Sylvester's law of inertia.
+
+\
+**[Next Page]**
+\
+
+Now, let us have a look at the invariants that determine the representation over $\mathbb{Q}_p$.
+
+\
+**[Next Page]**
+\
+
+先从一个简单的例子开始，Q_{p\neq2}上的
+
+\
+**[Next Page]**
+\
+
+This involves a lot of tedious casework, so we will omit all details due to time constraints.
+
+$f$ represents $0$ if and only if:
+
+For rank $2$, $d = -1$.
+
+For rank $3$, the Hilbert symbol of $-1$ and $-d$ equals the Hasse invariant.
+
+For rank $4$, either $d \neq -1$, or $d = 1$ and the Hasse invariant is the Hilbert symbol of $-1$ and $-1$.
+
+For rank $\geq 5$, it always holds.
+
+Applying this theorem to $f_a = f \oplus -aZ^2$, we can directly obtain the condition for $f$ to represent $a$, which will not be repeated here. However, you should notice that the representation numbers of a quadratic form are completely determined by its rank, discriminant, and Hasse invariant.
+
+\
+**[Next Page]**
+\
+
+At the end of the first part, let me mention some results here without going into details.
+
+Witt's theorem tells us that an injective metric-preserving map from a subspace of a quadratic space to another quadratic space can be extended to an metric-preserving map of the whole space.
+
+If we consider two isomorphic subspaces U and W of the same quadratic space V, Witt's theorem allows us to extend the isomorphism to an automorphism of V. By restricting this automorphism to the orthogonal complement, we obtain an isomorphism on the complement.
+
+Therefore, we have Witt's cancellation theorem: if two quadratic forms are equivalent and one direct summand is equivalent, then the other direct summand is also equivalent.
+
+\
+**[Next Page]**
+\
+
+Next, let's move on to the second part: quadratic forms over $\mathbb{Q}_p$ and $\mathbb{Q}$.
+
+\
+**[Next Page]**
+\
+
+Let's start with the discussion over $\mathbb{Q}_p$.
+
+\
+**[Next Page]**
+\
+
+Non-degenerate quadratic forms of rank n over $\mathbb{Q}_p$ are completely classified by their Hasse invariant and discriminant.
+
+If $f$ and $g$ have the same discriminant $d$ and $\varepsilon$, then they can both represent some $a$. Thus, $f$ can be decomposed as $f_1 \oplus aZ^2$, and similarly for $g$.
+
+A direct calculation shows that $f_1$ and $g_1$ have the same invariants. By induction on the rank, $f_1 \sim g_1$, so $f \sim g$.
+
+\
+**[Next Page]**
+\
+
+However, the invariants $d$ and $\varepsilon$ cannot be chosen arbitrarily; they must satisfy certain constraints. At the same time, we can also prove that for any invariants satisfying these constraints, there always exists a quadratic form with those invariants.
+
+For $n=1$, it's clear that the Hilbert symbol must be $1$, while $d$ is unrestricted.
+
+For $n=2$, by the properties of the Hilbert symbol, if $d=-1$ then $\varepsilon$ must be $1$. In both cases, we can construct $f=aX^2+adY^2$ to match the invariants.
+
+For $n=3$, we can always first choose any $a\neq d$, then by the $n=2$ case above, construct $g$ with $d(g) = ad$, $\varepsilon(g) = \varepsilon(a, -d)$. Then $f = g \oplus aZ^2$ works.
+
+For $n>3$, simply take $g(X_1, X_2, X_3)$ satisfying the conditions, and then add $X_i^2$ terms as needed.
+
+\
+**[Next Page]**
+\
+
+Finally, let us address the core question of today: the classification of quadratic forms over $\mathbb{Q}$.
+
+\
+**[Next Page]**
+\
+
+The Hasse-Minkowski theorem tells us that a quadratic form $f$ represents $0$ over $\mathbb{Q}$ if and only if it represents $0$ over $\mathbb{R}$ and over all $\mathbb{Q}_p$.
+
+The Hasse-Minkowski theorem is essential for today's topic, so I have included its proof in the appendix as the third part. If you are interested, feel free to discuss it with me after the presentation.
+
+With the help of the Hasse-Minkowski theorem, we can completely classify quadratic forms over $\mathbb{Q}$. 
+
+
+
+\
+**[Next Page]**
+\
+
+Of course, the selection of invariants here will be subject to even greater restrictions, including both local and global constraints.
+
+First, the Hilbert symbol must satisfy the global property：the product formula.
+
+Second, the invariants must satisfy the restrictions we discussed for $\mathbb{Q}_p$.
+
+Finally, the invariants must satisfy the restrictions over $\mathbb{R}$: signature, $d_\infty$, and $\varepsilon_\infty$.
+
+I think I'll stop here. This completes the classification of quadratic forms over $\mathbb{Q}$. Thank you.
