@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Shubin Xue">
+<meta name="dcterms.date" content="2025-09-11">
+
+<title>Classification of Quadratic Forms over \mathbb Q – SunQuarTeX</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1217e8f751926dd69c60162fef2aade6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+
+MathJax = {
+
+  tex: {
+
+    macros: {
+
+        SunQuarTeX: String.raw`\phantom{}\kern-.0em\lower.0ex\hbox{$\mathbf S$}\kern-.045em\lower.0ex\hbox{$\scriptstyle \mathbf U$}\kern-.045em\hbox{$\scriptstyle \mathbb N$}\kern-.0em\hbox{$\mathbb Q$}\kern-.045em\lower.0ex\hbox{$\scriptstyle \mathbf U$}\kern-.135em\lower.0ex\hbox{$\scriptstyle \mathbf A$}\kern-.09em\lower.0ex\hbox{$\scriptstyle \mathbb R$}\kern-.072em\mathbf{\TeX}`
+
+    }
+
+  }
+
+};
+
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../qmd/cntalk.pdf">Qmd</a></li><li class="breadcrumb-item"><a href="../qmd/pre2.0.html">Classification of Quadratic Forms over <span class="math inline">\(\mathbb Q\)</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">SunQuarTeX</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Qmd</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/cntalk.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">有理数域上二次型分类报告稿</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/cntalk-hint.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">有理数域上二次型分类报告稿</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/pre.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Classification of Quadratic Forms over <span class="math inline">\(\mathbb Q\)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/pre2.0.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Classification of Quadratic Forms over <span class="math inline">\(\mathbb Q\)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/talk.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Presentation Speech Draft</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/talk-hint.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Presentation Speech Draft</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/talk-hint2.0.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Presentation Speech Draft</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#notations" id="toc-notations" class="nav-link active" data-scroll-target="#notations">Notations</a></li>
+  <li><a href="#background-and-approaches" id="toc-background-and-approaches" class="nav-link" data-scroll-target="#background-and-approaches">Background and Approaches</a>
+  <ul class="collapse">
+  <li><a href="#classification-and-representation" id="toc-classification-and-representation" class="nav-link" data-scroll-target="#classification-and-representation">Classification and Representation</a>
+  <ul class="collapse">
+  <li><a href="#quadratic-froms" id="toc-quadratic-froms" class="nav-link" data-scroll-target="#quadratic-froms">Quadratic Froms</a></li>
+  <li><a href="#background17-18th-century" id="toc-background17-18th-century" class="nav-link" data-scroll-target="#background17-18th-century">Background(17-18th century)</a></li>
+  <li><a href="#background19-20th-century" id="toc-background19-20th-century" class="nav-link" data-scroll-target="#background19-20th-century">Background(19-20th century)</a></li>
+  <li><a href="#representing-numbers" id="toc-representing-numbers" class="nav-link" data-scroll-target="#representing-numbers">Representing Numbers</a></li>
+  </ul></li>
+  <li><a href="#local-to-global-principle" id="toc-local-to-global-principle" class="nav-link" data-scroll-target="#local-to-global-principle">Local-to-Global Principle</a>
+  <ul class="collapse">
+  <li><a href="#decomposing-quadratic-spaces" id="toc-decomposing-quadratic-spaces" class="nav-link" data-scroll-target="#decomposing-quadratic-spaces">Decomposing quadratic spaces</a></li>
+  <li><a href="#f-sim-g-over-mathbbq" id="toc-f-sim-g-over-mathbbq" class="nav-link" data-scroll-target="#f-sim-g-over-mathbbq"><span class="math inline">\(f \sim g\)</span> over <span class="math inline">\(\mathbb{Q}\)</span></a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#quadratic-forms-over-mathbbq_v" id="toc-quadratic-forms-over-mathbbq_v" class="nav-link" data-scroll-target="#quadratic-forms-over-mathbbq_v">Quadratic Forms over <span class="math inline">\(\mathbb{Q}_v\)</span></a>
+  <ul class="collapse">
+  <li><a href="#general-ideas" id="toc-general-ideas" class="nav-link" data-scroll-target="#general-ideas">General Ideas</a>
+  <ul class="collapse">
+  <li><a href="#general-ideas-1" id="toc-general-ideas-1" class="nav-link" data-scroll-target="#general-ideas-1">General Ideas</a></li>
+  </ul></li>
+  <li><a href="#classification-of-quadratic-forms-over-mathbb-r" id="toc-classification-of-quadratic-forms-over-mathbb-r" class="nav-link" data-scroll-target="#classification-of-quadratic-forms-over-mathbb-r">Classification of Quadratic Forms over <span class="math inline">\(\mathbb R\)</span></a>
+  <ul class="collapse">
+  <li><a href="#case-over-mathbb-r" id="toc-case-over-mathbb-r" class="nav-link" data-scroll-target="#case-over-mathbb-r">Case over <span class="math inline">\(\mathbb R\)</span></a></li>
+  </ul></li>
+  <li><a href="#invariants-that-determine-the-representation-over-mathbb-q_p" id="toc-invariants-that-determine-the-representation-over-mathbb-q_p" class="nav-link" data-scroll-target="#invariants-that-determine-the-representation-over-mathbb-q_p">Invariants that Determine the Representation over <span class="math inline">\(\mathbb Q_p\)</span></a>
+  <ul class="collapse">
+  <li><a href="#binary-quadratic-forms-over-mathbb-q_pneq2" id="toc-binary-quadratic-forms-over-mathbb-q_pneq2" class="nav-link" data-scroll-target="#binary-quadratic-forms-over-mathbb-q_pneq2">Binary Quadratic Forms over <span class="math inline">\(\mathbb Q_{p\neq2}\)</span></a></li>
+  <li><a href="#binary-quadratic-forms-over-mathbb-q_pneq2-1" id="toc-binary-quadratic-forms-over-mathbb-q_pneq2-1" class="nav-link" data-scroll-target="#binary-quadratic-forms-over-mathbb-q_pneq2-1">Binary Quadratic Forms over <span class="math inline">\(\mathbb Q_{p\neq2}\)</span></a></li>
+  <li><a href="#hilbert-symbol" id="toc-hilbert-symbol" class="nav-link" data-scroll-target="#hilbert-symbol">Hilbert Symbol</a></li>
+  <li><a href="#computation-of-hilbert-symbol" id="toc-computation-of-hilbert-symbol" class="nav-link" data-scroll-target="#computation-of-hilbert-symbol">Computation of Hilbert Symbol</a></li>
+  <li><a href="#hasse-invariant" id="toc-hasse-invariant" class="nav-link" data-scroll-target="#hasse-invariant">Hasse Invariant</a></li>
+  <li><a href="#condition-for-a-quadratic-form-to-represent-0-or-a-over-mathbb-q_p" id="toc-condition-for-a-quadratic-form-to-represent-0-or-a-over-mathbb-q_p" class="nav-link" data-scroll-target="#condition-for-a-quadratic-form-to-represent-0-or-a-over-mathbb-q_p">Condition for a quadratic form to represent <span class="math inline">\(0\)</span> or <span class="math inline">\(a\)</span> over <span class="math inline">\(\mathbb Q_p\)</span></a></li>
+  </ul></li>
+  <li><a href="#classification-of-quadratic-forms-over-mathbb-q_p" id="toc-classification-of-quadratic-forms-over-mathbb-q_p" class="nav-link" data-scroll-target="#classification-of-quadratic-forms-over-mathbb-q_p">Classification of Quadratic Forms over <span class="math inline">\(\mathbb Q_p\)</span></a>
+  <ul class="collapse">
+  <li><a href="#f-sim-g-over-mathbbq_p" id="toc-f-sim-g-over-mathbbq_p" class="nav-link" data-scroll-target="#f-sim-g-over-mathbbq_p"><span class="math inline">\(f \sim g\)</span> over <span class="math inline">\(\mathbb{Q}_p\)</span></a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a>
+  <ul class="collapse">
+  <li><a href="#classification-results" id="toc-classification-results" class="nav-link" data-scroll-target="#classification-results">Classification Results</a>
+  <ul class="collapse">
+  <li><a href="#classification-of-quadratic-forms-over-mathbbq_p" id="toc-classification-of-quadratic-forms-over-mathbbq_p" class="nav-link" data-scroll-target="#classification-of-quadratic-forms-over-mathbbq_p">Classification of Quadratic Forms over <span class="math inline">\(\mathbb{Q}_p\)</span></a></li>
+  <li><a href="#classification-of-quadratic-forms-over-mathbbq" id="toc-classification-of-quadratic-forms-over-mathbbq" class="nav-link" data-scroll-target="#classification-of-quadratic-forms-over-mathbbq">Classification of Quadratic Forms over <span class="math inline">\(\mathbb{Q}\)</span></a></li>
+  </ul></li>
+  <li><a href="#proof-of-hasse-minkowski-theorem" id="toc-proof-of-hasse-minkowski-theorem" class="nav-link" data-scroll-target="#proof-of-hasse-minkowski-theorem">Proof of Hasse-Minkowski Theorem</a>
+  <ul class="collapse">
+  <li><a href="#skeleton-of-proof" id="toc-skeleton-of-proof" class="nav-link" data-scroll-target="#skeleton-of-proof">Skeleton of Proof</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="pre2.0.pdf"><i class="bi bi-file-pdf"></i>Beamer</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../qmd/cntalk.pdf">Qmd</a></li><li class="breadcrumb-item"><a href="../qmd/pre2.0.html">Classification of Quadratic Forms over <span class="math inline">\(\mathbb Q\)</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Classification of Quadratic Forms over <span class="math inline">\(\mathbb Q\)</span></h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Shubin Xue </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Beijing Institute of Technology
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 11, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    A reading guidance of the first part of J. P. Serre’s <em>A Course in Arithmetic</em>
+  </div>
+</div>
+
+
+</header>
+
+
+<section id="notations" class="level3">
+<h3 class="anchored" data-anchor-id="notations">Notations</h3>
+<ul>
+<li><p><span class="math inline">\(K\)</span>: an arbitrary field and <span class="math inline">\(\operatorname{char}K \neq 2\)</span>.</p></li>
+<li><p><span class="math inline">\(X\)</span>, <span class="math inline">\(Y\)</span>, <span class="math inline">\(Z\)</span>: variables.</p></li>
+<li><p><span class="math inline">\(\mathbb{P}\)</span>: the set of prime numbers.</p>
+<ul>
+<li><span class="math inline">\(p\in\mathbb{P}\)</span>.</li>
+<li><span class="math inline">\(\mathbb Q_p\)</span>: the completion of <span class="math inline">\(\mathbb Q\)</span> at <span class="math inline">\(p\)</span>.</li>
+</ul></li>
+<li><p><span class="math inline">\(\mathbb{V}\)</span>=<span class="math inline">\(\mathbb{P}\cup\{\infty\}\)</span>.</p>
+<ul>
+<li><span class="math inline">\(v\in\mathbb{V}\)</span>.</li>
+<li><span class="math inline">\(\mathbb Q_\infty=\mathbb{R}\)</span></li>
+</ul></li>
+<li><p>Denote by the same letter an element and its class modulo.</p></li>
+</ul>
+</section>
+<section id="background-and-approaches" class="level1">
+<h1>Background and Approaches</h1>
+<section id="classification-and-representation" class="level2">
+<h2 class="anchored" data-anchor-id="classification-and-representation">Classification and Representation</h2>
+<section id="quadratic-froms" class="level3">
+<h3 class="anchored" data-anchor-id="quadratic-froms">Quadratic Froms</h3>
+<ul>
+<li><span class="math inline">\(f(\vec{X})=\sum_{i,j=1}^n a_{ij} X_i X_j\)</span> is a quadratic form
+<ul>
+<li><span class="math inline">\(\vec{X}=(X_1,\cdots,X_n)\in K^n\)</span> and <span class="math inline">\(a_{ij}=a_{ji}\in K\)</span>.</li>
+</ul></li>
+</ul>
+<ul>
+<li>The matrix <span class="math inline">\(A_f=(a_{ij})\)</span> associated with <span class="math inline">\(f\)</span> is Symmetric.
+<ul>
+<li><span class="math inline">\(f(\vec{X})=\vec{X}^TA_f\vec{X}\)</span>.</li>
+</ul></li>
+</ul>
+<ul>
+<li>The pair <span class="math inline">\((K^n, f)\)</span> is a quadratic space.
+<ul>
+<li><span class="math inline">\(f \sim g\)</span>: <span class="math inline">\(\exists P\in GL(n,K)\)</span> s.t. <span class="math inline">\(A_f=P^TA_gP\)</span>.</li>
+</ul></li>
+</ul>
+<ul>
+<li><span class="math inline">\(f(X_1,\cdots,X_n)\)</span> and <span class="math inline">\(g(X_1,\cdots,X_m)\)</span> <span class="math display">\[
+f\oplus g=f(X_1,\cdots,X_n)+g(X_{n+1},\cdots,X_{n+m})
+\]</span></li>
+</ul>
+</section>
+<section id="background17-18th-century" class="level3">
+<h3 class="anchored" data-anchor-id="background17-18th-century">Background(17-18th century)</h3>
+<!-- 
+As early as the early development of number theory, mathematicians began to pay attention to the representation problem of quadratic forms.
+
+In the 19th century, mathematicians gradually discovered subtle connections between these problems.
+-->
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="thm-fermat" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 1 (Fermat’s Two-Square Theorem)</strong></span> An odd prime <span class="math inline">\(p\)</span> can be represented as the sum of two squares if and only if <span class="math inline">\(p\equiv1\pmod{4}\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="thm-gauss" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 2 (Gauss’s Three-Square Theorem)</strong></span> All positive integers except those of the form <span class="math inline">\(4^a(8m-1)\)</span> can be represented as the sum of three squares.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="background19-20th-century" class="level3">
+<h3 class="anchored" data-anchor-id="background19-20th-century">Background(19-20th century)</h3>
+<!--
+With the development of algebraic number theory, mathematicians extended Gauss's ideas to the field of rational numbers. By utilizing the properties of "local fields" (the real numbers and $p$-adic fields), they further strengthened the logical connection between classification and representation of numbers.
+-->
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="thm-gauss-classification" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3 (Gauss’s Classification of Quadratic Forms)</strong></span> Quadratic forms in the same equivalence class represent exactly the same set of numbers.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="thm-hasse-minkowski" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 4 (Hasse-Minkowski)</strong></span> <span class="math inline">\(f\)</span> represents <span class="math inline">\(0\)</span> over <span class="math inline">\(\mathbb Q\)</span> iff it represents <span class="math inline">\(0\)</span> over all <span class="math inline">\(\mathbb Q_v\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="representing-numbers" class="level3">
+<h3 class="anchored" data-anchor-id="representing-numbers">Representing Numbers</h3>
+<ul>
+<li><span class="math inline">\(f\)</span> represents <span class="math inline">\(a \in K\)</span>: <span class="math inline">\(\exists 0\neq x \in K^n\)</span> s.t. <span class="math inline">\(f(x) = a\)</span>.</li>
+</ul>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="prp-represent" class="theorem proposition">
+<p><span class="theorem-title"><strong>Proposition 1</strong></span> Let <span class="math inline">\(a \in K^\times\)</span>. TFAE:</p>
+<ul>
+<li><span class="math inline">\(f\)</span> represents <span class="math inline">\(a\)</span></li>
+<li><span class="math inline">\(f \sim f_1 \oplus aZ^2\)</span> where <span class="math inline">\(f_1\)</span> is of rank <span class="math inline">\(\operatorname{rank} f - 1\)</span>.</li>
+<li><span class="math inline">\(f_a=f \oplus -aZ^2\)</span> represents <span class="math inline">\(0\)</span>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="cor-hasse-minkowski" class="theorem corollary">
+<p><span class="theorem-title"><strong>Corollary 1 (Hasse-Minkowski Theorem)</strong></span> <span class="math inline">\(f\)</span> represents <span class="math inline">\(a\in\mathbb Q^\times\)</span> over <span class="math inline">\(\mathbb Q\)</span> iff it represents <span class="math inline">\(a\)</span> over all <span class="math inline">\(\mathbb Q_v\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>Apply Hasse-Minkowski Theorem to <span class="math inline">\(f_a=f \oplus -aZ^2\)</span>.</li>
+</ul>
+<!--
+
+- To check if $a$ can be represented by $f$, it suffices to examine when a quadratic form represents $0$.
+
+- Suppose $f_1$ and $f_2$ can both represent some $a\in K^\times$, then we hope to reduce their rank and use induction in subsequent proofs. 
+
+-->
+</section>
+</section>
+<section id="local-to-global-principle" class="level2">
+<h2 class="anchored" data-anchor-id="local-to-global-principle">Local-to-Global Principle</h2>
+<section id="decomposing-quadratic-spaces" class="level3 fragile">
+<h3 class="fragile anchored" data-anchor-id="decomposing-quadratic-spaces">Decomposing quadratic spaces</h3>
+<!--
+If a quadratic space $(V, Q)$ has two isometric subspaces $U$ and $W$, then by Witt's theorem, the isometry can be extended to an automorphism of $V$. By restricting this automorphism to $U^\perp$, we see that $U^\perp$ and $W^\perp$ are also isometric.
+-->
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="thm-witt-cancel" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 5 (Witt’s cancellation)</strong></span> <span class="math inline">\(f_1 \oplus g_1 \sim f_2 \oplus g_2\)</span> and <span class="math inline">\(g_1 \sim g_2\)</span> implies <span class="math inline">\(f_1 \sim f_2\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li><span class="math inline">\((V, Q)\)</span>: A quadratic space.</li>
+<li><span class="math inline">\((U, Q)\)</span> and <span class="math inline">\((W, Q)\)</span>: Isomorphic subspaces.</li>
+</ul>
+<div id="fig-tikzcd-quiver" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tikzcd-quiver-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="tikz">
+<!--?xml version='1.0' encoding='UTF-8'?-->
+<!-- This file was generated by dvisvgm 3.4.3 -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="284.82pt" height="73.77pt" viewbox="0 0 189.88 49.18">
+<style type="text/css">
+@font-face{font-family:OYFEXR-CMMI10;src:url(data:application/x-font-woff2;base64,d09GMgABAAAAAAMwAAoAAAAABaQAAALmAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmAANAqERINKCwoAATYCJAMQBCAFgmgHIBtvBAiO1FaxTZK8yCI5bG4jAV38IGpX3woEsfP6Us8oCgML4yjg0XAgU+x/Lsf/HW66A5og56e2F90Gakw/CzTAxDZuDbOIo16klm3LgugREoaFnRK+e46x3x4AR5ywUXABHXr8TxIjPWFfSACLxAfQ3MAw+ApkjuoccIsSk/EfwIGhiir+DwACjlCyKVLMSRXACcyPwZOoy1afIz6nCHlp8xDAJ6AE2PCmqu9XE/vqVeSbN9HzKjExKgusjd96s21GKipGakqqdVL7zq5s7KKs7OvXAm/fxiTILOxbT0rP7CklkZqcHb11qSZ3VntTPrltm9+ezMypy6+Q1Gdk5i3bBiC5JbfvNeROHlfFRklvKsC+HTYtfWtXKikn+pTi7KvLcTkLbP4Cf7SD/PfBf/ysLyS+QDFndTiDIxzljSVJdOusGx7vR3OLKaTdULwT2kEdVOrGI/zZ1PWWffpwuaQMc/NytwrBeK1CbnINPy6svjcSOnXNo1xqlZASOjU9vId271L/ClMJg9AaCRe9dqXbocXUTNfkPq96MyUvJXeWKGBy8NxI6LVrJkWQkKCsTNu1P7B/vUJ8UqSFtDgN+aafqSoYlUlBayq9Ns2nJioN4xF+U1pWK6fNTTe4goUD1NKVhN645lMjtblxC7+55pZkovVb8t0NEa4yyQMjoduheRRMB3zCJzwfRAEAYAAG0F8/U0Qcv/JycIKd/P+J04wuAeBF7hC3Jf1hd905zcBQYD9nAKAPHhEFezjHCPELIeTo+DVDIIKwASchIiuWiwBFlpsQnfP85FniwAofGGXBieUkr5DlIq2b5SZvccjP0unjxfid7HRInLdXbLiRR1CQn5npq2DdzNhU7331viazOq+iOqdI1cLY0tgCHkoUKVWlUpZyqoKUyMzPFQsRx5uXWOGMeAgSxI8ZU9Hgp1bIU6KYKjPGTH3g4xd7/bRAyCzS1Qlxpmp5Kn54jiKqLBizZMwCBwYA) format('woff2');}
+@font-face{font-family:NQUDBD-CMSY7;src:url(data:application/x-font-woff2;base64,d09GMgABAAAAAAJAAAoAAAAABBgAAAH2AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmAAPAqBPIExCwgAATYCJAMKBCAFgmIHIBtSAwCehbHzIokblSLM2b+VKnig/VFv/vyFkQgkVbFCTExb1wk6sV+9pvs/txY+XnDhf6erwogEHoLs9v8knbXAIkrL/9HDqZvac+E+X0B5gJnuxQEVeIJhZBvHBIrSkLMg3LXjK4m2TZGSnx3I0hOTaED5yv0/cxM1EL8Kh8DQAZEm0DjUa5ru3VDCRLnuSZc/AZBLPgACAAD/AVCABOYkAcypvIEmlaBEkayVXPt687U6DowEmtMKCAGZKABUmgQx5j1v3hTdvmuMFBqdBxfNZ+dt378vvXmLkcxzbkMrVgtzLarBwt7grqXh7P7QgYWBxvzKyFKQfx3J+UvlVl1Mbk5o1KWyOfWiftWJ850eZVtJndbG5ENxUO4v6FVvOn/h53pb+NOC+8H5P3I/Owlr0+9y74YCEEDg0KRsp9Yo6re2VEmX/pOJyi2gTQEgsIz8Ry6rEqERSBOLKQcNJFcC0BOS6erHNgKQq/QZjWkNeuxoTfo8p3XZCiCJ1kFwlCW0ylozrcHSMK3J2mKhK8jJEVU+4DxquSESVBKz/VS9+Vb8ffxUpefMe5rau+NuJgj0CfIJJNFisrqcKjuQbVHy9WYWVwgRSJHI5EupSlR2h85iBvz58PMAqfbsZWczgfI7NPiAJrfO4daYgEA+gvgIJAEAuwAA) format('woff2');}
+@font-face{font-family:XDTRFF-CMR7;src:url(data:application/x-font-woff2;base64,d09GMgABAAAAAAHQAAoAAAAAA6AAAAGGAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmAANApYYgsGAAE2AiQDCAQgBYJcByAb8wIArg54KjL1W0MDm6bqCUcE/HsrjIN4+Bpr7+/uHWI+3bQ0QiQ0olil4tnqhYjFSmXv/1rzt4QHZKOfZ1xrVIM22NkxXTV/FyR7PoQcJslX79RN/mXP/0AjjHLKxhRP4y6RJ84mjskU4D5P9Ty2fYvISk14iMMCOX0FLOkl+R92L2F0AzU6YE14YHZ8susD57BcVpEFr7dWkJAxrFuGMeaBoggc1hpp9VeGDyZQkDAOTANQAKm7+7T37v36Y8Tj29XrEa5arfH93K23VpR0Neez+bgAAsHGwf8c/LXTRbUj78Qt0C6BYL3WG4Ew7yAUPzGyBMn46ALp63SBgNAHFkWXPtAgk6BJVvo7TZLQonQIs0IsilED0CA30CSftNOG30lqf5TV1bArJdflraRk3k91WZB6cm+Of01nN1zv+lNUBU1QwTI3tbC10bWCEnMdXSszDbaKEpeLZ0mUmGq6VtaG5maQTCDxgefMMjrNWUDnxFuOUMfO0NpO3xRSCTQCFQ1g/wEAAAA=) format('woff2');}
+@font-face{font-family:TUELZZ-LMRoman7-Regular;src:url(data:application/x-font-woff2;base64,d09GMgABAAAAAAUsAAoAAAAACNAAAAThAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmAAdAqJZIc9CxYAATYCJAMoBCAFgw8HIBvhBgAehekWuw0kyfp2J/QTnvVvZspkpXTBrsSmS3Th9swePlbIyUjzBfA8dnv/dnJiEeZJbYFFcSAtCJoHqUYQYP0PoF574Jy6oOGaI/HmJ2iKpPbI4vOED5JlBxtefzrxgE7gt042vlHs+H3b/VkQKT0AJD+iV0AM8IMf/WcFW2Mv+qbJICxyAEoCaAR2Q8s2VwMS+XR12X88QJuD/HiB/xmDARDOCoFwkYZHzRAi+Uo1a9WmwyAtXe7QmTpzFGfWY9OGjQkBlALLrQAYAXQCoA9pABG4olncA0i7Ls7U19XIy1LukeKorTBBtP6AQjy5n6IQWw7UtZcRjQ3TtJB2wP5E+aJx/4PpOw2x5w3Cdt/6pRUFY/toGtRzptbGPM9yL1WnLlnv2+bK8xH6K84TXsPDVYbc3Z4GVfrOIQbTvNA87D/mcVFlMKgFoXxPxi7lOVcu/LTTpBfRG7lRwZR7IUsvBI2O0tbDzePxQ1bs5/iUa6rlQzZGY3zAM3aXEDZK64fVk24TisPq3dHMQNeUkG+E2tJAo8oac8LRqT0KsntpZGX0qUfGt6lh7+z+eHc5HtsVVbf84MbD24/oD2nG9ip07VdM2r58yUK18YH012BPCPyl5m0vVTsNsd5DVhvt0cgovYfZxrPCC8V2Q+Rpg+95txmh/E6M16itrd4OhocomxGbSSebw+qXD5lpPmPXPR8s516mnzSoCYUEAdGr/cFDjtbTEfob7oieMHIySlMy0TsYa8WOaMZjkhwnHh4ZvI9C+r27RotPRuzdSpIhfKyVd8z/uSTPzNvBOAM17RwJSDH6Yf2/iu3RjHKMjBK8U+VCtEeDCwO62SyzTU/b1R91SDIdS15h1ueZux7t/mMGV07lrUk1ScY/hG4leE0Z9PXw3kJq4THnsRqiQetX4CaoPvQ6kuypm/9heMjV6wEmh84/W5GjaoOm0q2p6g/KDTLxmSt/pST384j9xvP3K0kH2rQKN6PGVatacR/57j2UaXbmh0RjuvQklQcfVXhNOZvTlZmrMdfx+aUs8uzB2WNUE4yuiTt+3I+q/cTUPSEFZWhXK5enMM1RVsrVJAtdU/7wjmlahbJCi4s7y5K4dcAskdno1Sm9oEQ7flCO0DqTi1x0qu2HER/Ah+E/ALdCutvS7Kac+SqbJOsg/db7a8itbpopX6OhZ80Ly4NdwK2Rqtgm5JJp7PT4Qb+5z1LTaiMzdDqtIAtlI9bErcJj6LNki7t1wAylnfjYv04bUhosYuuNa4y4Eqn010XaQpwJPc261OWPkz+/+Ros240S8pOf1USRMqt6x2xx2pwc90uckrN2XhN7/GPntSTKHQAAAAFA4Ju3fpmpN43/VUZE4OT/n2TiZxCTwZm2W1EOmcDpf87oAwJQT8UZAL8Qw4rHFRkE9fu90wmByYOY3IPQPAW/uNsJAkDJVR/i0pSlEAOUwSgtYkt2LojRnAUJW77nKQopCFTlgJipLoJIoC5BzMa4IBHoSDEl3Lv5BZ/OdkSp2Iz8qqqAwxXw0zn786WakMBgVt/7Az1vmduhnavpcQkLDA8Mg3wFSvXp0ahXFBVWhnxVqgSYadSwVCuNObrjg9Rao7hWhz7OYroIEShYB8xy9GopG+m0agk2WWDKFnN10Ho1FOpdhAkULhCqCXAAAA==) format('woff2');}
+
+</style>
+<g id="page1">
+<text font-family="OYFEXR-CMMI10" font-size="9.96" x="35.709678" y="-80.386016" transform="matrix(1.000261 0 0 1.000261 -22.485 92.247)">V<tspan x="77.605741">V</tspan><tspan x="146.699705">V</tspan><tspan x="195.250031">V</tspan></text>
+<text font-family="OYFEXR-CMMI10" font-size="9.96" x="35.709678" y="-46.703808" transform="matrix(1.000261 0 0 1.000261 -22.416 92.247)">U</text>
+<text font-family="OYFEXR-CMMI10" font-size="9.96" x="77.605741" y="-46.703808" transform="matrix(1.000261 0 0 1.000261 -23.868 92.247)">W</text>
+<text font-family="OYFEXR-CMMI10" font-size="9.96" x="146.699705" y="-46.703808" transform="matrix(1.000261 0 0 1.000261 -25.779 92.247)">U</text>
+<text font-family="NQUDBD-CMSY7" font-size="6.97" x="154.541745" y="-50.303575" transform="matrix(1.000545 0 0 1.000545 -25.779 92.247)">⊥</text>
+<text font-family="OYFEXR-CMMI10" font-size="9.96" x="195.250031" y="-46.703808" transform="matrix(1.000261 0 0 1.000261 -27.230999 92.247)">W</text>
+<text font-family="NQUDBD-CMSY7" font-size="6.97" x="205.9817" y="-50.303575" transform="matrix(1.000545 0 0 1.000545 -27.230999 92.247)">⊥</text>
+<path d="M25.75282 9.348672H50.64862" stroke="#000" fill="none" stroke-width=".39848" stroke-miterlimit="10" stroke-dasharray="2.78941 1.59395"></path>
+<text font-family="NQUDBD-CMSY7" font-size="6.97" x="27.397063" y="-48.371628" transform="matrix(1.000545 0 0 1.000545 7.675003 53.22)">∼</text>
+<text font-family="XDTRFF-CMR7" font-size="6.97" x="27.453033" y="-46.192816" transform="matrix(1.000545 0 0 1.000545 7.675003 53.22)">=</text>
+<path d="M59.1546 15.688492V34.873512" stroke="#000" fill="none" stroke-width=".39848" stroke-miterlimit="10"></path>
+<path d="M136.77284 9.348672H167.92654" stroke="#000" fill="none" stroke-width=".39848" stroke-miterlimit="10"></path>
+<path d="M166.05367 6.957762C166.43224 8.392342 167.27585 9.069742 168.1258 9.348672C167.27585 9.627602 166.43224 10.305002 166.05367 11.739582" stroke="#000" fill="none" stroke-width=".39848" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round"></path>
+<text font-family="NQUDBD-CMSY7" font-size="6.97" x="27.397063" y="-48.371628" transform="matrix(1.000545 0 0 1.000545 122.024 53.22)">∼</text>
+<text font-family="XDTRFF-CMR7" font-size="6.97" x="27.453033" y="-46.192816" transform="matrix(1.000545 0 0 1.000545 122.024 53.22)">=</text>
+<path d="M128.26687 15.688492V33.222972" stroke="#000" fill="none" stroke-width=".39848" stroke-miterlimit="10" stroke-dasharray="2.78941 1.59395"></path>
+<text font-family="TUELZZ-LMRoman7-Regular" font-size="6.97" x="27.397063" y="-46.690545" transform="matrix(1.000545 0 0 1.000545 70.899 73.484)">Restrict</text>
+<path d="M176.831 15.688492V33.222972" stroke="#000" fill="none" stroke-width=".39848" stroke-miterlimit="10" stroke-dasharray="2.78941 1.59395"></path>
+<path d="M17.24684 34.873512V15.688492" stroke="#000" fill="none" stroke-width=".39848" stroke-miterlimit="10"></path>
+<text font-family="TUELZZ-LMRoman7-Regular" font-size="6.97" x="27.397063" y="-46.690545" transform="matrix(1.000545 0 0 1.000545 -25.266999 74.417)">Lift</text>
+<path d="M25.68431 43.039822H48.86642" stroke="#000" fill="none" stroke-width=".39848" stroke-miterlimit="10"></path>
+<path d="M46.993534 40.64891C47.372104 42.08349 48.215714 42.76089 49.065664 43.03982C48.215714 43.31875 47.372104 43.99615 46.993534 45.43073" stroke="#000" fill="none" stroke-width=".39848" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round"></path>
+<text font-family="NQUDBD-CMSY7" font-size="6.97" x="27.397063" y="-48.371628" transform="matrix(1.000545 0 0 1.000545 6.948998 86.911)">∼</text>
+<text font-family="XDTRFF-CMR7" font-size="6.97" x="27.453033" y="-46.192816" transform="matrix(1.000545 0 0 1.000545 6.948998 86.911)">=</text>
+<path d="M140.06679 43.039822H163.18039" stroke="#000" fill="none" stroke-width=".39848" stroke-miterlimit="10"></path>
+<path d="M161.3075 40.64891C161.68607 42.08349 162.52968 42.76089 163.37963 43.03982C162.52968 43.31875 161.68607 43.99615 161.3075 45.43073" stroke="#000" fill="none" stroke-width=".39848" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round"></path>
+<text font-family="NQUDBD-CMSY7" font-size="6.97" x="27.397063" y="-48.371628" transform="matrix(1.000545 0 0 1.000545 121.297 86.911)">∼</text>
+<text font-family="XDTRFF-CMR7" font-size="6.97" x="27.453033" y="-46.192816" transform="matrix(1.000545 0 0 1.000545 121.297 86.911)">=</text>
+</g>
+</svg>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tikzcd-quiver-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Witt’s Cancellation Theorem
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="f-sim-g-over-mathbbq" class="level3">
+<h3 class="anchored" data-anchor-id="f-sim-g-over-mathbbq"><span class="math inline">\(f \sim g\)</span> over <span class="math inline">\(\mathbb{Q}\)</span></h3>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="thm-q-classification" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 6 (<span class="citation" data-cites="serre_course_1973"><a href="#ref-serre_course_1973" role="doc-biblioref">[1]</a></span> p.&nbsp;44, chap.&nbsp;4, sec.&nbsp;3.3, theorem 9)</strong></span> Two non-degenerate quadratic forms of rank <span class="math inline">\(n\)</span> over <span class="math inline">\(\mathbb Q\)</span> are equivalent iff they are equivalent over each <span class="math inline">\(\mathbb{Q}_v\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li><p>Suppose <span class="math inline">\(f \sim g\)</span> over <span class="math inline">\(\mathbb{Q}_v\)</span> for all <span class="math inline">\(v\)</span>. Take <span class="math inline">\(a\)</span> represented by <span class="math inline">\(f\)</span> over <span class="math inline">\(\mathbb{Q}\)</span>.</p></li>
+<li><p>Then <span class="math inline">\(f\)</span> represents <span class="math inline">\(a\)</span> over all <span class="math inline">\(\mathbb{Q}_v\)</span>. And <span class="math inline">\(a\)</span> is represented by <span class="math inline">\(g\)</span> over all <span class="math inline">\(\mathbb{Q}_v\)</span>, since <span class="math inline">\(f \sim g\)</span> over all <span class="math inline">\(\mathbb{Q}_v\)</span>.</p></li>
+<li><p>By the Hasse-Minkowski Theorem, <span class="math inline">\(a\)</span> is represented by both <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> over <span class="math inline">\(\mathbb{Q}\)</span>.</p></li>
+<li><p>Thus <span class="math inline">\(f \sim aZ^2 \oplus f_1\)</span>, <span class="math inline">\(g \sim aZ^2 \oplus g_1\)</span>, where <span class="math inline">\(\operatorname{rank} f_1 = \operatorname{rank} g_1 = n-1\)</span>.</p></li>
+<li><p>By Witt’s cancellation, we have <span class="math inline">\(f_1 \sim g_1\)</span> over <span class="math inline">\(\mathbb{Q}_v\)</span> for all <span class="math inline">\(v \in \mathbb{V}\)</span>.</p></li>
+<li><p>By induction on rank <span class="math inline">\(n\)</span>, <span class="math inline">\(f_1 \sim g_1\)</span> over <span class="math inline">\(\mathbb{Q}\)</span>, thus <span class="math inline">\(f \sim g\)</span> over <span class="math inline">\(\mathbb{Q}\)</span>.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="quadratic-forms-over-mathbbq_v" class="level1">
+<h1>Quadratic Forms over <span class="math inline">\(\mathbb{Q}_v\)</span></h1>
+<section id="general-ideas" class="level2">
+<h2 class="anchored" data-anchor-id="general-ideas">General Ideas</h2>
+<section id="general-ideas-1" class="level3">
+<h3 class="anchored" data-anchor-id="general-ideas-1">General Ideas</h3>
+<ul>
+<li><p>Reduce to classifying non-degenerate rank <span class="math inline">\(n\)</span> quadratic forms of the shape <span class="math inline">\(f \sim \sum_{i=1}^n a_i X_i^2\)</span>, where <span class="math inline">\(a_i\in K^\times/(K^\times)^2\)</span>.</p>
+<ul>
+<li><p>Invariant rank: non-degenerate.</p></li>
+<li><p>Symmetric matrices: diagonal.</p></li>
+<li><p><span class="math inline">\(\sum a_i b_i^2 X_i^2 \sim \sum a_i X_i^2\)</span>: squared-free.</p></li>
+</ul></li>
+</ul>
+<ul>
+<li>If <span class="math inline">\(f \sim g\)</span>, <span class="math inline">\(\det(A_f) = \det(P^T A_g P) = \det(A_g) \det(P)^2\)</span>
+<ul>
+<li>Invariant discriminant: <span class="math inline">\(d = \det(A)\)</span> in <span class="math inline">\(K^\times/(K^\times)^2\)</span>.</li>
+</ul></li>
+</ul>
+<ul>
+<li><span class="math inline">\(\mathbb{R}^\times / (\mathbb{R}^\times)^2 \cong \{1, -1\}\)</span>.</li>
+<li><span class="math inline">\(\mathbb{Q}_p^\times / (\mathbb{Q}_p^\times)^2 \cong K_4 = \{1, a, p, ap\}\)</span>.</li>
+</ul>
+</section>
+</section>
+<section id="classification-of-quadratic-forms-over-mathbb-r" class="level2">
+<h2 class="anchored" data-anchor-id="classification-of-quadratic-forms-over-mathbb-r">Classification of Quadratic Forms over <span class="math inline">\(\mathbb R\)</span></h2>
+<section id="case-over-mathbb-r" class="level3">
+<h3 class="anchored" data-anchor-id="case-over-mathbb-r">Case over <span class="math inline">\(\mathbb R\)</span></h3>
+<ul>
+<li>Invariants:
+<ul>
+<li>Rank: <span class="math inline">\(\operatorname{rank}f = n\)</span>.</li>
+<li>Signature: <span class="math inline">\((r,s):=(\#\text{positive eigenvalues},\#\text{negative eigenvalues})\)</span>.</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="thm-Sylvester" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 7 (Sylvester’s law of inertia)</strong></span> Let <span class="math inline">\(f=\sum_{i,j=1}^na_{ij}X_iX_j\)</span> be a quadratic form of rank <span class="math inline">\(n\)</span> over <span class="math inline">\(\mathbb R\)</span>. Then <span class="math display">\[
+f\sim X_1^2+X_2^2+\cdots+X_r^2-X_{r+1}^2-\cdots-X_{r+s}^2.
+\]</span></p>
+</div>
+</div>
+</div>
+</div>
+<!--
+By diagonalizing via congruence and factoring out squares on the diagonal, we see that the only invariants for classifying real quadratic forms are:
+-->
+</section>
+</section>
+<section id="invariants-that-determine-the-representation-over-mathbb-q_p" class="level2">
+<h2 class="anchored" data-anchor-id="invariants-that-determine-the-representation-over-mathbb-q_p">Invariants that Determine the Representation over <span class="math inline">\(\mathbb Q_p\)</span></h2>
+<section id="binary-quadratic-forms-over-mathbb-q_pneq2" class="level3">
+<h3 class="anchored" data-anchor-id="binary-quadratic-forms-over-mathbb-q_pneq2">Binary Quadratic Forms over <span class="math inline">\(\mathbb Q_{p\neq2}\)</span></h3>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="thm-classification" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 8</strong></span> Two quadratic forms of rank <span class="math inline">\(2\)</span> over <span class="math inline">\(\mathbb Q_{p\neq2}\)</span> are equivalent iff they have the same discriminant <span class="math inline">\(d\)</span> and a common representive number <span class="math inline">\(a\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>Take <span class="math inline">\(a\)</span> represented by both <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span>.</li>
+</ul>
+<ul>
+<li><span class="math inline">\(f\sim f_1\oplus aZ^2\)</span> where <span class="math inline">\(\operatorname{rank}f_1=1\)</span>.</li>
+</ul>
+<ul>
+<li>Then <span class="math inline">\(f_1=adX^2\)</span>. Thus <span class="math inline">\(f\)</span> is determined. Similarly for <span class="math inline">\(g\)</span>.</li>
+</ul>
+</section>
+<section id="binary-quadratic-forms-over-mathbb-q_pneq2-1" class="level3">
+<h3 class="anchored" data-anchor-id="binary-quadratic-forms-over-mathbb-q_pneq2-1">Binary Quadratic Forms over <span class="math inline">\(\mathbb Q_{p\neq2}\)</span></h3>
+<div id="tbl-disc" class="quarto-layout-panel anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<div aria-describedby="tbl-disc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="tbl-disc" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-disc-p1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-tbl figure">
+<div aria-describedby="tbl-disc-p1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(d\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(a\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(p\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(a p\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\textcolor{blue}1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(a\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(p\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(a p\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(a\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\textcolor{blue}1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(a p\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(p\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(p\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\textcolor{blue}1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(a\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(a p\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\textcolor{blue}1\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-tbl" id="tbl-disc-p1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) <span class="math inline">\(p \equiv 1 \pmod 4\)</span>
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="tbl-disc" style="flex-basis: 50.0%;justify-content: center;">
+<div id="tbl-disc-p3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-tbl figure">
+<div aria-describedby="tbl-disc-p3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(d\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(a\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(p\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(a p\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\textcolor{blue}1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\textcolor{red}a\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(p\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(a p\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(a\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\textcolor{blue}1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(a p\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(p\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(p\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\textcolor{green}1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\textcolor{red}a\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(a p\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(\textcolor{green}1\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-tbl" id="tbl-disc-p3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) <span class="math inline">\(p \equiv 3 \pmod 4\)</span>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-tbl" id="tbl-disc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Equivalent classes of nondegenerate quadratic forms over <span class="math inline">\(\mathbb Q_p\)</span> when <span class="math inline">\(n=2\)</span>
+</figcaption>
+</figure>
+</div>
+<ul>
+<li>Fix <span class="math inline">\(d\)</span>: classification depends on whether <span class="math inline">\(1\)</span> can be represented.</li>
+</ul>
+</section>
+<section id="hilbert-symbol" class="level3">
+<h3 class="anchored" data-anchor-id="hilbert-symbol">Hilbert Symbol</h3>
+<ul>
+<li><span class="math inline">\(f=aX^2+bY^2\)</span> represents <span class="math inline">\(1\)</span> <span class="math inline">\(\iff\)</span> <span class="math inline">\(Z^2\oplus-f\)</span> represents <span class="math inline">\(0\)</span>.</li>
+</ul>
+<ul>
+<li>Hilbert symbol: <span class="math display">\[
+(a, b) =
+\begin{cases}
+1 &amp; \text{$Z^2-aX^2-bY^2$ represents 0}, \\
+-1 &amp; \text{Otherwise}.
+\end{cases}
+\]</span></li>
+</ul>
+</section>
+<section id="computation-of-hilbert-symbol" class="level3">
+<h3 class="anchored" data-anchor-id="computation-of-hilbert-symbol">Computation of Hilbert Symbol</h3>
+<div id="tbl-hilbert-symbol" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<div aria-describedby="tbl-hilbert-symbol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th><span class="math inline">\((\cdot,\cdot)\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(0\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(a\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(p\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(a\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-1\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(p\)</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\((-1)^{\frac{p-1}{2}}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-tbl" id="tbl-hilbert-symbol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Hilbert symbol, <span class="math inline">\(p \neq 2\)</span>
+</figcaption>
+</figure>
+</div>
+<ul>
+<li>Hilbert symbol is a symmetric non-degenerate bilinear form.</li>
+</ul>
+</section>
+<section id="hasse-invariant" class="level3">
+<h3 class="anchored" data-anchor-id="hasse-invariant">Hasse Invariant</h3>
+<ul>
+<li><span class="math inline">\(f \sim \sum_{i=1}^n a_i X_i^2\)</span> with <span class="math inline">\(n\geq3\)</span>.
+<ul>
+<li>Hasse invariant: <span class="math inline">\(\varepsilon(f)=\prod_{i&lt;j}(a_i,a_j)\)</span></li>
+</ul></li>
+</ul>
+<ul>
+<li><span class="math inline">\(f=a_1X_1^2\oplus f_1\)</span> with <span class="math inline">\(f_1=a_2X_2^2+\cdots+a_nX_n^2\)</span>
+<ul>
+<li><span class="math inline">\(d(f)=\prod_{i=1}^na_i=a_1\prod_{i=2}^na_i=a_1d(f_1)\)</span>.</li>
+<li><span class="math inline">\(\varepsilon(f)=\prod_{1\leq i&lt;j\leq n}(a_i,a_j)=\varepsilon(f_1)\cdot(a_1,a_2\cdots a_n)=\varepsilon(f_1)\cdot(a_1,a_1d(f))\)</span>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="condition-for-a-quadratic-form-to-represent-0-or-a-over-mathbb-q_p" class="level3">
+<h3 class="anchored" data-anchor-id="condition-for-a-quadratic-form-to-represent-0-or-a-over-mathbb-q_p">Condition for a quadratic form to represent <span class="math inline">\(0\)</span> or <span class="math inline">\(a\)</span> over <span class="math inline">\(\mathbb Q_p\)</span></h3>
+<!--*This involves a lot of tedious casework, so we will omit all details due to time constraints.-->
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="thm-qp-represent-determine" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 9 ((<span class="citation" data-cites="serre_course_1973"><a href="#ref-serre_course_1973" role="doc-biblioref">[1]</a></span> p.&nbsp;36, chap.&nbsp;4, sec.&nbsp;2.2, theorem 6))</strong></span> <span class="math inline">\(f\)</span> represents <span class="math inline">\(0\)</span> iff:</p>
+<ul>
+<li>For <span class="math inline">\(n=2\)</span>: <span class="math inline">\(d=-1\)</span>;</li>
+<li>For <span class="math inline">\(n=3\)</span>: <span class="math inline">\((-1,-d)= \varepsilon\)</span>;</li>
+<li>For <span class="math inline">\(n=4\)</span>: <span class="math inline">\(d \neq 1\)</span> or <span class="math inline">\(d=1\)</span> and <span class="math inline">\(\varepsilon = (-1,-1)\)</span>;</li>
+<li>For <span class="math inline">\(n\geq5\)</span>: no conditions.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<p>By applying Theorem to <span class="math inline">\(f_a=f \oplus -aZ^2\)</span>, we obtain:</p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="cor-qp-represent-determine-cor" class="theorem corollary">
+<p><span class="theorem-title"><strong>Corollary 2 ((<span class="citation" data-cites="serre_course_1973"><a href="#ref-serre_course_1973" role="doc-biblioref">[1]</a></span> p.&nbsp;37, chap.&nbsp;4, sec.&nbsp;2.2, corollary to themrem 6))</strong></span> <span class="math inline">\(f\)</span> represents <span class="math inline">\(a\in \mathbb Q_p^\times/(\mathbb Q_p^\times)^2\)</span> iff:</p>
+<ul>
+<li>For <span class="math inline">\(n=1\)</span>: <span class="math inline">\(a=d\)</span>;</li>
+<li>For <span class="math inline">\(n=2\)</span>: <span class="math inline">\(( a,-d ) = \varepsilon\)</span>;</li>
+<li>For <span class="math inline">\(n=3\)</span>: <span class="math inline">\(a \neq d\)</span> or <span class="math inline">\(a=d\)</span> and <span class="math inline">\(\varepsilon = ( -1,-d )\)</span>;</li>
+<li>For <span class="math inline">\(n\geq4\)</span>: no conditions.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!--Therefore, the set of numbers represented by a quadratic form $f$ is completely determined by its discriminant and Hasse invariant.-->
+</section>
+</section>
+<section id="classification-of-quadratic-forms-over-mathbb-q_p" class="level2">
+<h2 class="anchored" data-anchor-id="classification-of-quadratic-forms-over-mathbb-q_p">Classification of Quadratic Forms over <span class="math inline">\(\mathbb Q_p\)</span></h2>
+<section id="f-sim-g-over-mathbbq_p" class="level3">
+<h3 class="anchored" data-anchor-id="f-sim-g-over-mathbbq_p"><span class="math inline">\(f \sim g\)</span> over <span class="math inline">\(\mathbb{Q}_p\)</span></h3>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="thm-qp-classification" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 10 ((<span class="citation" data-cites="serre_course_1973"><a href="#ref-serre_course_1973" role="doc-biblioref">[1]</a></span> p.&nbsp;39, chap.&nbsp;4, sec.&nbsp;2.3, theorem 7))</strong></span> Two non-degenerate quadratic forms of rank <span class="math inline">\(n\)</span> over <span class="math inline">\(\mathbb Q_p\)</span> are equivalent iff they have the same discriminant <span class="math inline">\(d\)</span> and Hasse invariant <span class="math inline">\(\varepsilon\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li><p><span class="math inline">\(f,g\)</span> have same <span class="math inline">\(d\)</span> and <span class="math inline">\(\varepsilon\)</span>, thus there exists <span class="math inline">\(a\in \mathbb Q_p^\times\)</span> which both represented by <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span>.</p></li>
+<li><p>Then <span class="math inline">\(f \sim f_1 \oplus aZ^2\)</span>, where <span class="math inline">\(f_1\)</span> is of rank <span class="math inline">\(n-1\)</span>. Similarly for <span class="math inline">\(g\)</span>.</p></li>
+<li><p><span class="math inline">\(d\)</span> and <span class="math inline">\(\varepsilon\)</span> of <span class="math inline">\(f_1\)</span> can be determined:</p>
+<ul>
+<li><span class="math inline">\(d(f_1) = a d(f) = a d(g) = d(g_1)\)</span></li>
+<li><span class="math inline">\(\varepsilon(f_1) = \varepsilon(f) \cdot (a, a d(f)) = \varepsilon(g) \cdot (a, a d(g)) = \varepsilon(g_1)\)</span></li>
+</ul></li>
+<li><p>Thus <span class="math inline">\(f_1, g_1\)</span> share the same <span class="math inline">\(d\)</span> and <span class="math inline">\(\varepsilon\)</span>. QED by induction.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="appendix" class="level1">
+<h1>Appendix</h1>
+<section id="classification-results" class="level2">
+<h2 class="anchored" data-anchor-id="classification-results">Classification Results</h2>
+<section id="classification-of-quadratic-forms-over-mathbbq_p" class="level3">
+<h3 class="anchored" data-anchor-id="classification-of-quadratic-forms-over-mathbbq_p">Classification of Quadratic Forms over <span class="math inline">\(\mathbb{Q}_p\)</span></h3>
+<p>The invariants <span class="math inline">\(d\)</span> and <span class="math inline">\(\varepsilon\)</span> satisfy the following relations:</p>
+<ul>
+<li>For <span class="math inline">\(n=1\)</span>: <span class="math inline">\(\varepsilon=1\)</span>;</li>
+</ul>
+<ul>
+<li>For <span class="math inline">\(n=2\)</span>: <span class="math inline">\(d\neq-1\)</span> or <span class="math inline">\(\varepsilon=1\)</span>;</li>
+</ul>
+<ul>
+<li>For <span class="math inline">\(n\geq3\)</span>: no conditions.</li>
+</ul>
+<ul>
+<li><span class="math inline">\(n=1\)</span>: <span class="math inline">\(f=dX^2\)</span></li>
+</ul>
+<ul>
+<li><span class="math inline">\(n=2\)</span>: <span class="math inline">\(f=aX^2+adY^2\)</span></li>
+</ul>
+<ul>
+<li><span class="math inline">\(n=3\)</span>: <span class="math inline">\(f=g\oplus aZ^2\)</span>
+<ul>
+<li><span class="math inline">\(d(g)=ad\)</span> and <span class="math inline">\(\varepsilon(g)=\varepsilon(a,-d)\)</span></li>
+</ul></li>
+</ul>
+<ul>
+<li><span class="math inline">\(n&gt;3\)</span>: <span class="math inline">\(f=g(X_1,X_2,X_3)\oplus X_4^2\oplus\cdots\oplus X_n^2\)</span>
+<ul>
+<li><span class="math inline">\(d(g)=d\)</span> and <span class="math inline">\(\varepsilon(g)=\varepsilon\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="classification-of-quadratic-forms-over-mathbbq" class="level3">
+<h3 class="anchored" data-anchor-id="classification-of-quadratic-forms-over-mathbbq">Classification of Quadratic Forms over <span class="math inline">\(\mathbb{Q}\)</span></h3>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="thm-product-formula" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 11 (Product formula)</strong></span> <span class="math inline">\((a,b)_v=1\)</span> for almost all <span class="math inline">\(v\in \mathbb{V}\)</span> and <span class="math inline">\(\prod_{v\in\mathbb{V}}(a,b)_v=1\)</span></p>
+</div>
+</div>
+</div>
+</div>
+<p>The invariants <span class="math inline">\(d_v\)</span> and <span class="math inline">\(\varepsilon_v\)</span> satisfy the following relations:</p>
+<ul>
+<li><span class="math inline">\(\varepsilon_v=1\)</span> for almost <span class="math inline">\(v\in\mathbb V\)</span>, and <span class="math inline">\(\prod_{v\in\mathbb{V}}\varepsilon_v=1\)</span>.</li>
+</ul>
+<ul>
+<li><span class="math inline">\(\varepsilon_v=1\)</span> if <span class="math inline">\(n=1\)</span> and if <span class="math inline">\(n=2\)</span> and if the image <span class="math inline">\(d_v\)</span> of <span class="math inline">\(d\)</span> in <span class="math inline">\(\mathbb Q_p^\times/{\mathbb Q_p^\times}^2\)</span> is equal to <span class="math inline">\(-1\)</span>.</li>
+</ul>
+<ul>
+<li><span class="math inline">\(r,s\geq 0\)</span> and <span class="math inline">\(r+s=\operatorname{rank}\)</span>.</li>
+</ul>
+<ul>
+<li><span class="math inline">\(d_\infty=(-1)^s\)</span></li>
+</ul>
+<ul>
+<li><span class="math inline">\(\varepsilon_\infty=(-1)^{s(s-1)/2}\)</span></li>
+</ul>
+</section>
+</section>
+<section id="proof-of-hasse-minkowski-theorem" class="level2">
+<h2 class="anchored" data-anchor-id="proof-of-hasse-minkowski-theorem">Proof of Hasse-Minkowski Theorem</h2>
+<section id="skeleton-of-proof" class="level3">
+<h3 class="anchored" data-anchor-id="skeleton-of-proof">Skeleton of Proof</h3>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="thm-hasse-minkowski" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 12 (Hasse-Minkowski)</strong></span> <span class="math inline">\(f\)</span> represents <span class="math inline">\(0\)</span> over <span class="math inline">\(\mathbb Q\)</span> iff it represents <span class="math inline">\(0\)</span> over <span class="math inline">\(\mathbb R\)</span> and all <span class="math inline">\(\mathbb Q_p\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Skeleton of Proof:</p>
+<ul>
+<li>n=2: Fermat’s Two-Square Theorem.</li>
+</ul>
+<ul>
+<li>n=3：Gauss’s Three-Square Theorem.</li>
+</ul>
+<ul>
+<li>n=4：Lagrange’s Four-Square Theorem.</li>
+</ul>
+<ul>
+<li>n≥5: Mathematical induction.</li>
+</ul>
+
+
+
+</section>
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-serre_course_1973" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">J.-P. Serre, <em>A course in arithmetic</em>, vol. 7. in Graduate texts in mathematics, vol. 7. New York, <span>NY</span>: Springer, 1973. doi: <a href="https://doi.org/10.1007/978-1-4684-9884-4">10.1007/978-1-4684-9884-4</a>.</div>
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/liyvew\.github\.io\/pre\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
