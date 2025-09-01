@@ -273,7 +273,13 @@ Equivalent classes of nondegenerate quadratic forms over $\mathbb Q_p$ when $n=2
 
 ### Hilbert Symbol
 
-- $f=aX^2+bY^2$ represents $1$ $\iff$ $Z^2\oplus-f$ represents $0$.
+$$
+\begin{aligned}
+f = aX^2 + bY^2 &\text{ represents } 1 \\
+\iff \\
+Z^2 - aX^2 - bY^2 &\text{ represents } 0.
+\end{aligned}
+$$
 
 \vspace{0.7cm}
 
@@ -316,31 +322,25 @@ Hilbert symbol, $p \neq 2$
 
 <!--*This involves a lot of tedious casework, so we will omit all details due to time constraints.-->
 
-:::{#thm-qp-represent-determine}
 
-## ([@serre_course_1973] p. 36, chap. 4, sec. 2.2, theorem 6)
+- $f$ represents $0$ iff:
+    - For $n=2$: $d=-1$;
+    - For $n=3$: $(-1,-d)= \varepsilon$;
+    - For $n=4$: $d \neq 1$ or $d=1$ and $\varepsilon = (-1,-1)$;
+    - For $n\geq5$: no conditions.
 
-$f$ represents $0$ iff:
+\vspace{0.5cm}
 
-- For $n=2$: $d=-1$;
-- For $n=3$: $(-1,-d)= \varepsilon$;
-- For $n=4$: $d \neq 1$ or $d=1$ and $\varepsilon = (-1,-1)$;
-- For $n\geq5$: no conditions.
-:::
+By applying the result to $f_a=f \oplus -aZ^2$, we obtain:
 
-By applying Theorem to $f_a=f \oplus -aZ^2$, we obtain:
+\vspace{0.5cm}
 
-:::{#cor-qp-represent-determine-cor}
+- $f$ represents $a\in \mathbb Q_p^\times/(\mathbb Q_p^\times)^2$ iff:
+    - For $n=1$: $a=d$;
+    - For $n=2$: $( a,-d ) = \varepsilon$;
+    - For $n=3$: $a \neq d$ or $a=d$ and $\varepsilon = ( -1,-d )$;
+    - For $n\geq4$: no conditions.
 
-## ([@serre_course_1973] p. 37, chap. 4, sec. 2.2, corollary to themrem 6)
-
-$f$ represents $a\in \mathbb Q_p^\times/(\mathbb Q_p^\times)^2$ iff:
-
-- For $n=1$: $a=d$;
-- For $n=2$: $( a,-d ) = \varepsilon$;
-- For $n=3$: $a \neq d$ or $a=d$ and $\varepsilon = ( -1,-d )$;
-- For $n\geq4$: no conditions.
-:::
 
 <!--Therefore, the set of numbers represented by a quadratic form $f$ is completely determined by its discriminant and Hasse invariant.-->
 
@@ -371,37 +371,26 @@ Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q_p$ are equivalent
 
 ### Classification of Quadratic Forms over $\mathbb{Q}_p$
 
+:::: {.columns}
+::: {.column}
 The invariants $d$ and $\varepsilon$ satisfy the following relations:
 
-\vspace{0.1cm}
-
 - For $n=1$: $\varepsilon=1$;
-
-\vspace{0.1cm}
-
 - For $n=2$: $d\neq-1$ or $\varepsilon=1$;
-
-\vspace{0.1cm}
-
 - For $n\geq3$: no conditions.
-
-\vspace{0.5cm}
-
+:::
+::: {.column}
 - $n=1$: $f=dX^2$
 
-\vspace{0.2cm}
-
 - $n=2$: $f=aX^2+adY^2$
-
-\vspace{0.2cm}
 
 - $n=3$: $f=g\oplus aZ^2$ 
     - $d(g)=ad$ and $\varepsilon(g)=\varepsilon(a,-d)$
 
-\vspace{0.2cm}
-
 - $n>3$: $f=g(X_1,X_2,X_3)\oplus X_4^2\oplus\cdots\oplus X_n^2$
     - $d(g)=d$ and $\varepsilon(g)=\varepsilon$
+:::
+::::
 
 
 ### Classification of Quadratic Forms over $\mathbb{Q}$

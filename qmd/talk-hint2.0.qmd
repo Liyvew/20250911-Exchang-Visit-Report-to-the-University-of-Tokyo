@@ -177,53 +177,56 @@ Now, let us have a look at the invariants that determine the representation over
 **[Next Page]**
 \
 
-先从一个简单的例子开始，Q_{p\neq2}上的
+We start with a simple example: binary quadratic forms over $\mathbb{Q}_p$ for $p \neq 2$.
+
+Take $a$ represented by both $f$ and $g$.
+
+$f$ can be decomposed as $f_1 \oplus aZ^2$, where $f_1$ has rank 1, so its coefficient must be $ad$. In this way, $f$ is completely determined.
 
 \
 **[Next Page]**
 \
 
-This involves a lot of tedious casework, so we will omit all details due to time constraints.
+Table 1 shows the classification results for binary quadratic forms. The black color represents a unique class, while each other color corresponds to a different classification.
 
-$f$ represents $0$ if and only if:
-
-For rank $2$, $d = -1$.
-
-For rank $3$, the Hilbert symbol of $-1$ and $-d$ equals the Hasse invariant.
-
-For rank $4$, either $d \neq -1$, or $d = 1$ and the Hasse invariant is the Hilbert symbol of $-1$ and $-1$.
-
-For rank $\geq 5$, it always holds.
-
-Applying this theorem to $f_a = f \oplus -aZ^2$, we can directly obtain the condition for $f$ to represent $a$, which will not be repeated here. However, you should notice that the representation numbers of a quadratic form are completely determined by its rank, discriminant, and Hasse invariant.
+Table 2 shows the classification according to whether 1 can be represented. From this, we can see that when $d$ is fixed, the classification of binary quadratic forms is completely determined by whether 1 can be represented.
 
 \
 **[Next Page]**
 \
 
-At the end of the first part, let me mention some results here without going into details.
+Recall the equivalent characterization of $f$ representing $a$: $Z^2 \oplus -f$ represents $0$.
 
-Witt's theorem tells us that an injective metric-preserving map from a subspace of a quadratic space to another quadratic space can be extended to an metric-preserving map of the whole space.
+This leads us to another invariant that determines the classification of binary quadratic forms: the Hilbert symbol.
 
-If we consider two isomorphic subspaces U and W of the same quadratic space V, Witt's theorem allows us to extend the isomorphism to an automorphism of V. By restricting this automorphism to the orthogonal complement, we obtain an isomorphism on the complement.
-
-Therefore, we have Witt's cancellation theorem: if two quadratic forms are equivalent and one direct summand is equivalent, then the other direct summand is also equivalent.
+From Table 2 above, we can see the possible values of the Hilbert symbol. It is easy to observe from the table that the Hilbert symbol is a non-degenerate bilinear form.
 
 \
 **[Next Page]**
 \
 
-Next, let's move on to the second part: quadratic forms over $\mathbb{Q}_p$ and $\mathbb{Q}$.
+Now let us generalize the Hilbert symbol to higher dimensions, defining the Hasse invariant as the product of Hilbert symbols.
+
+We can directly compute the discriminant of $f_1$, and use the bilinearity of the Hilbert symbol to obtain its Hasse invariant.
 
 \
 **[Next Page]**
 \
 
-Let's start with the discussion over $\mathbb{Q}_p$.
+Here are the conditions for a quadratic form to represent numbers over $\mathbb{Q}_p$.
+
+The set of numbers represented by a quadratic form $f$ is completely determined by its discriminant and Hasse invariant.
 
 \
 **[Next Page]**
 \
+
+Finally, let us state the conditions for equivalence of quadratic forms over $\mathbb{Q}_p$.
+
+\
+**[Next Page]**
+\
+
 
 Non-degenerate quadratic forms of rank n over $\mathbb{Q}_p$ are completely classified by their Hasse invariant and discriminant.
 
@@ -231,48 +234,15 @@ If $f$ and $g$ have the same discriminant $d$ and $\varepsilon$, then they can b
 
 A direct calculation shows that $f_1$ and $g_1$ have the same invariants. By induction on the rank, $f_1 \sim g_1$, so $f \sim g$.
 
-\
-**[Next Page]**
-\
-
-However, the invariants $d$ and $\varepsilon$ cannot be chosen arbitrarily; they must satisfy certain constraints. At the same time, we can also prove that for any invariants satisfying these constraints, there always exists a quadratic form with those invariants.
-
-For $n=1$, it's clear that the Hilbert symbol must be $1$, while $d$ is unrestricted.
-
-For $n=2$, by the properties of the Hilbert symbol, if $d=-1$ then $\varepsilon$ must be $1$. In both cases, we can construct $f=aX^2+adY^2$ to match the invariants.
-
-For $n=3$, we can always first choose any $a\neq d$, then by the $n=2$ case above, construct $g$ with $d(g) = ad$, $\varepsilon(g) = \varepsilon(a, -d)$. Then $f = g \oplus aZ^2$ works.
-
-For $n>3$, simply take $g(X_1, X_2, X_3)$ satisfying the conditions, and then add $X_i^2$ terms as needed.
-
-\
-**[Next Page]**
-\
-
-Finally, let us address the core question of today: the classification of quadratic forms over $\mathbb{Q}$.
-
-\
-**[Next Page]**
-\
-
-The Hasse-Minkowski theorem tells us that a quadratic form $f$ represents $0$ over $\mathbb{Q}$ if and only if it represents $0$ over $\mathbb{R}$ and over all $\mathbb{Q}_p$.
-
-The Hasse-Minkowski theorem is essential for today's topic, so I have included its proof in the appendix as the third part. If you are interested, feel free to discuss it with me after the presentation.
-
-With the help of the Hasse-Minkowski theorem, we can completely classify quadratic forms over $\mathbb{Q}$. 
-
+(My presentation ends here. Thank you for your attention.)
 
 
 \
 **[Next Page]**
 \
 
-Of course, the selection of invariants here will be subject to even greater restrictions, including both local and global constraints.
 
-First, the Hilbert symbol must satisfy the global property：the product formula.
 
-Second, the invariants must satisfy the restrictions we discussed for $\mathbb{Q}_p$.
-
-Finally, the invariants must satisfy the restrictions over $\mathbb{R}$: signature, $d_\infty$, and $\varepsilon_\infty$.
-
-I think I'll stop here. This completes the classification of quadratic forms over $\mathbb{Q}$. Thank you.
+\
+**[Next Page]**
+\
