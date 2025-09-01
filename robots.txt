@@ -1,1 +1,1 @@
-Sitemap: https://liyvew.github.io/pre/sitemap.xml
+Sitemap: https://liyvew.github.io/sitemap.xml
