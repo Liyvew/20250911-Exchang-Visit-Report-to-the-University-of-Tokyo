@@ -289,3 +289,4 @@ Second, the invariants must satisfy the restrictions we discussed for $\mathbb{Q
 Finally, the invariants must satisfy the restrictions over $\mathbb{R}$: signature, $d_\infty$, and $\varepsilon_\infty$.
 
 I think I'll stop here. This completes the classification of quadratic forms over $\mathbb{Q}$. Thank you.
+

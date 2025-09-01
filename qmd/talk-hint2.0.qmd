@@ -187,9 +187,9 @@ $f$ can be decomposed as $f_1 \oplus aZ^2$, where $f_1$ has rank 1, so its coeff
 **[Next Page]**
 \
 
-Table 1 shows the classification results for binary quadratic forms. The black color represents a unique class, while each other color corresponds to a different classification.
+The table shows the classification results of binary quadratic forms. The same color indicates an equivalence class, while black indicates distinct equivalence classes. The boxed quadratic form cannot represent 1.
 
-Table 2 shows the classification according to whether 1 can be represented. From this, we can see that when $d$ is fixed, the classification of binary quadratic forms is completely determined by whether 1 can be represented.
+From the table, we can see that when the discriminant $d$ is fixed, the classification of binary quadratic forms is completely determined by whether they can represent 1.
 
 \
 **[Next Page]**
@@ -199,7 +199,9 @@ Recall the equivalent characterization of $f$ representing $a$: $Z^2 \oplus -f$ 
 
 This leads us to another invariant that determines the classification of binary quadratic forms: the Hilbert symbol.
 
-From Table 2 above, we can see the possible values of the Hilbert symbol. It is easy to observe from the table that the Hilbert symbol is a non-degenerate bilinear form.
+In the table above, the boxed quadratic form corresponds to a Hilbert symbol of $-1$, so we can directly obtain the value of the Hilbert symbol. 
+
+It is easy to observe from the table that the Hilbert symbol is a non-degenerate bilinear form.
 
 \
 **[Next Page]**
@@ -235,7 +237,6 @@ If $f$ and $g$ have the same discriminant $d$ and $\varepsilon$, then they can b
 A direct calculation shows that $f_1$ and $g_1$ have the same invariants. By induction on the rank, $f_1 \sim g_1$, so $f \sim g$.
 
 (My presentation ends here. Thank you for your attention.)
-
 
 \
 **[Next Page]**
