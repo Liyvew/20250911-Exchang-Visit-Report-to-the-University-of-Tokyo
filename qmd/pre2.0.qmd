@@ -378,7 +378,7 @@ By applying the result to $f_a=f \oplus -aZ^2$, we obtain:
 ### $f \sim g$ over $\mathbb{Q}_p$
 
 :::{#thm-qp-classification}
-## ([@serre_course_1973] p. 39, chap. 4, sec. 2.3, theorem 7)
+## [@serre_course_1973] p. 39, chap. 4, sec. 2.3, theorem 7
 
 Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q_p$ are equivalent iff they have the same discriminant $d$ and Hasse invariant $\varepsilon$.
 :::
