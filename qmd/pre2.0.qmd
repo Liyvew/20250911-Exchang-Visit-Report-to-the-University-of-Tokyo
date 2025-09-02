@@ -251,7 +251,7 @@ Two quadratic forms of rank $2$ over $\mathbb Q_{p\neq2}$ are equivalent iff the
 
 In the following table:
 
-- Each entry is the discriminant of $\alpha X^2+\beta Y^2$
+- Each entry: the discriminant of $\alpha X^2+\beta Y^2$
 - $\textcolor{blue}{a}$: Same color, same equivalent class
   - mutually distinct if colored black
 - $\boxed{a}$: Boxed quadratic forms cannot represent $1$
