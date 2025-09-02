@@ -41,19 +41,7 @@ Before we begin, let me outline some notation:
 **[Next Page]**
 \
 
-Now, let us begin with the first part.
-
-\
-**[Next Page]**
-\
-
-In the part, I hope to show you the relationship between the classification problem and the representation problem.
-
-\
-**[Next Page]**
-\
-
-First, let us clarify our object of study:
+Then, let us clarify our object of study:
 
 The sum of $a_{ij}X_iX_j$ is a quadratic form. 
 
@@ -62,6 +50,18 @@ The matrix $A_f$ corresponding to $f$ is a symmetric matrix. $f(X)$ can be writt
 The pair $(K^n, f)$ is called a quadratic space. We say $f$ is equivalent to $g$ if there exists an invertible matrix $P$ such that $A_f$ is congruent to $A_g$.
 
 If $f$ is a quadratic form in $n$ variables and $g$ is a quadratic form in $m$ variables, we denote by $f \oplus g$ the quadratic form in $n+m$ variables given by their direct sum.
+
+\
+**[Next Page]**
+\
+
+Now, let us begin with the first part.
+
+\
+**[Next Page]**
+\
+
+In the part, I hope to show you the relationship between the classification problem and the representation problem.
 
 \
 **[Next Page]**

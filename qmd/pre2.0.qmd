@@ -27,17 +27,13 @@ format:
 
 - $\mathbb{P}$: the set of prime numbers.
     - $p\in\mathbb{P}$.
-    - $\mathbb Q_p$: the completion of $\mathbb Q$ at $p$.
+    - $\mathbb Q_p$: the completion of $\mathbb Q$ w.r.t. $p$-adic valuation.
 
 - $\mathbb{V}$=$\mathbb{P}\cup\{\infty\}$.
     - $v\in\mathbb{V}$.
     - $\mathbb Q_\infty=\mathbb{R}$
 
 - Denote by the same letter an element and its class modulo. 
-
-# Background and Approaches
-
-## Classification and Representation
 
 ### Quadratic Froms
 
@@ -61,7 +57,11 @@ $$
 f\oplus g=f(X_1,\cdots,X_n)+g(X_{n+1},\cdots,X_{n+m})
 $$
 
-### Background(17-18th century)
+# Background and Approaches
+
+## Classification and Representation
+
+### Background (17-18th century)
 <!-- 
 As early as the early development of number theory, mathematicians began to pay attention to the representation problem of quadratic forms.
 
@@ -79,7 +79,7 @@ An odd prime $p$ can be represented as the sum of two squares if and only if $p\
 All positive integers except those of the form $4^a(8m-1)$ can be represented as the sum of three squares.
 :::
 
-### Background(19-20th century)
+### Background (19-20th century)
 <!--
 With the development of algebraic number theory, mathematicians extended Gauss's ideas to the field of rational numbers. By utilizing the properties of "local fields" (the real numbers and $p$-adic fields), they further strengthened the logical connection between classification and representation of numbers.
 -->
@@ -123,7 +123,7 @@ $f$ represents $a\in\mathbb Q^\times$ over $\mathbb Q$ iff it represents $a$ ove
 
 -->
 
-## Local-to-Global Principle
+## From Global to Local
 
 ### Decomposing quadratic spaces {.fragile}
 
@@ -182,9 +182,9 @@ Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q$ are equivalent i
 
 # Quadratic Forms over $\mathbb{Q}_v$
 
-## General Ideas
+## General Ideas over Arbitrary $K$ $(\operatorname{Char}K≠2)$
 
-### General Ideas
+### General Ideas over $K$
 
 - Reduce to classifying non-degenerate rank $n$ quadratic forms of the shape $f \sim \sum_{i=1}^n a_i X_i^2$, where $a_i\in K^\times/(K^\times)^2$.
 
@@ -192,7 +192,7 @@ Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q$ are equivalent i
 
     - Symmetric matrices: diagonal.
 
-    - $\sum a_i b_i^2 X_i^2 \sim \sum a_i X_i^2$: squared-free.
+    - $\sum a_i b_i^2 X_i^2 \sim \sum a_i X_i^2$: square-free.
 
 \vspace{0.5cm}
 
@@ -273,7 +273,7 @@ Two quadratic forms of rank $2$ over $\mathbb Q_{p\neq2}$ are equivalent iff the
 
 : $p \equiv 3 \pmod 4$ {#tbl-disc-p3}
 
-Equivalent classes of nondegenerate quadratic forms over $\mathbb Q_{p \neq 2}$, $n=2$  
+Discriminants of $\alpha X^2+\beta Y^2$ over $\mathbb Q_{p \neq 2}$
 :::
 
 
@@ -333,8 +333,6 @@ Hilbert Symbol of $\mathbb Q_{p\neq2}$
 \vspace{0.2cm}
 
 - Hasse invariant: $\varepsilon(f)=\prod_{i<j}(a_i,a_j)$
-
-
     
 \vspace{1cm}
 
@@ -470,16 +468,16 @@ Skeleton of Proof:
 
 \vspace{0.2cm}
 
-- n=2: Fermat's Two-Square Theorem.
+- $n=2$: Fermat's Two-Square Theorem.
 
 \vspace{0.2cm}
 
-- n=3：Gauss's Three-Square Theorem.
+- $n=3$：Gauss's Three-Square Theorem.
 
 \vspace{0.2cm}
 
-- n=4：Lagrange's Four-Square Theorem.
+- $n=4$：Lagrange's Four-Square Theorem.
 
 \vspace{0.2cm}
 
-- n≥5: Mathematical induction.
+- $n\geq5$: Mathematical induction.
