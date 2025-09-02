@@ -61,7 +61,7 @@ $$
 
 ## Classification and Representation
 
-### Background (17-18th century)
+### Background (17-18th Century)
 <!-- 
 As early as the early development of number theory, mathematicians began to pay attention to the representation problem of quadratic forms.
 
@@ -79,7 +79,7 @@ An odd prime $p$ can be represented as the sum of two squares if and only if $p\
 All positive integers except those of the form $4^a(8m-1)$ can be represented as the sum of three squares.
 :::
 
-### Background (19-20th century)
+### Background (19-20th Century)
 <!--
 With the development of algebraic number theory, mathematicians extended Gauss's ideas to the field of rational numbers. By utilizing the properties of "local fields" (the real numbers and $p$-adic fields), they further strengthened the logical connection between classification and representation of numbers.
 -->
@@ -96,7 +96,7 @@ Quadratic forms in the same equivalence class represent exactly the same set of 
 $f$ represents $0$ over $\mathbb Q$ iff it represents $0$ over all $\mathbb Q_v$.
 :::
 
-### Representing Numbers
+### Representation of Numbers
 
 - $f$ represents $a \in K$: $\exists 0\neq x \in K^n$ s.t. $f(x) = a$.
 
@@ -125,7 +125,7 @@ $f$ represents $a\in\mathbb Q^\times$ over $\mathbb Q$ iff it represents $a$ ove
 
 ## From Global to Local
 
-### Decomposing quadratic spaces {.fragile}
+### Decomposing Quadratic Spaces {.fragile}
 
 <!--
 If a quadratic space $(V, Q)$ has two isometric subspaces $U$ and $W$, then by Witt's theorem, the isometry can be extended to an automorphism of $V$. By restricting this automorphism to $U^\perp$, we see that $U^\perp$ and $W^\perp$ are also isometric.
@@ -133,7 +133,7 @@ If a quadratic space $(V, Q)$ has two isometric subspaces $U$ and $W$, then by W
 
 :::{#thm-witt-cancel}
 
-## Witt's cancellation 
+## Witt's Cancellation 
 
 $f_1 \oplus g_1 \sim f_2 \oplus g_2$ and  $g_1 \sim g_2$ implies $f_1 \sim f_2$.
 :::
@@ -216,7 +216,7 @@ Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q$ are equivalent i
 \vspace{0.7cm}
 
 :::{#thm-Sylvester}
-## Sylvester’s law of inertia
+## Sylvester’s Law of Inertia
 Let $f=\sum_{i,j=1}^na_{ij}X_iX_j$ be a quadratic form of rank $n$ over $\mathbb R$. Then
 $$
 f\sim X_1^2+X_2^2+\cdots+X_r^2-X_{r+1}^2-\cdots-X_{r+s}^2.
@@ -252,9 +252,9 @@ Two quadratic forms of rank $2$ over $\mathbb Q_{p\neq2}$ are equivalent iff the
 In the following table:
 
 - Entry: the discriminant of $\alpha X^2+\beta Y^2$
-- $\textcolor{blue}{a}$: Same color, same equivalent class
+- $\textcolor{blue}{a}$: same color, same equivalent class
   - mutually distinct if colored black
-- $\boxed{a}$: Boxed quadratic forms cannot represent $1$
+- $\boxed{a}$: boxed quadratic forms cannot represent $1$
 
 :::{#tbl-disc layout-ncol=2}
 
@@ -347,7 +347,7 @@ Hilbert Symbol of $\mathbb Q_{p\neq2}$
 
 - $\varepsilon(f)=\prod_{1\leq i<j\leq n}(a_i,a_j)=\varepsilon(f_1)\cdot(a_1,a_2\cdots a_n)=\varepsilon(f_1)\cdot(a_1,a_1d(f))$.
 
-### Condition for a quadratic form to represent $0$ or $a$ over $\mathbb Q_p$
+### Condition for a Quadratic Form to Represent $0$ or $a$ over $\mathbb Q_p$
 
 <!--*This involves a lot of tedious casework, so we will omit all details due to time constraints.-->
 
@@ -401,7 +401,6 @@ Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q_p$ are equivalent
 ### Classification of Quadratic Forms over $\mathbb{Q}_p$
 
 The invariants $d$ and $\varepsilon$ satisfy the following relations:
-
 
 :::: {.columns}
 ::: {.column width="50%"}
