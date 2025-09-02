@@ -7,13 +7,13 @@ format:
   pdf: default
 ---
 
-Good [morning/afternoon/evening], everyone. I am Shubin Xue from Beijing Institute of Technology. Today, It’s my pleasure to present my talk on Classification of Quadratic Forms over $\mathbb{Q}$.
+Good [morning/afternoon/evening], everyone. I am Shubin Xue from Beijing Institute of Technology. Today, it’s my pleasure to present my talk on the Classification of Quadratic Forms over $\mathbb{Q}$.
 
 \
 **[Next Page]**
 \
 
-My presentation will be divided into two main parts:
+My presentation will be divided into three main parts:
 
 First, I will discuss the primary motivations and standard approaches to this problem.
 
@@ -61,19 +61,19 @@ Now, let us begin with the first part.
 **[Next Page]**
 \
 
-In the part, I hope to show you the relationship between the classification problem and the representation problem.
+In this part, I hope to show you the relationship between the classification problem and the representation problem.
 
 \
 **[Next Page]**
 \
 
-As early as the early development of number theory, mathematicians began to pay attention to the representation problem of quadratic forms.
+As early as the early development of number theory, mathematicians began to pay attention to the problem of representing numbers by quadratic forms.
 
-In the 17th century, Fermat proposed the two-square theorem, which was later proved by Euler. And Euler also raised the three-square problem, but the connection between the representation problem and the classification problem was not yet noticed.
+In the 17th century, Fermat proposed the two-square theorem, which was later proved by Euler. Euler also raised the three-square problem, but the connection between the representation problem and the classification problem was not yet noticed.
 
 In the 19th century, mathematicians gradually discovered subtle connections between these problems.
 
-Gauss was the first to introduce the idea of classification into the study of quadratic forms. He pointed out that represention of numbers are invariants for the classification of quadratic forms.
+Gauss was the first to introduce the idea of classification into the study of quadratic forms. He pointed out that representations of numbers are invariants for the classification of quadratic forms.
 
 Later, in the 20th century, Hasse, building on Minkowski's work, proposed the “local-global principle” for quadratic forms over the rational numbers.
 
@@ -119,13 +119,11 @@ Now, let us have a look at the conditions for equivalence over $\mathbb{Q}$.
 
 Non-degenerate quadratic forms of rank $n$ over $\mathbb{Q}$ are equivalent if and only if they are equivalent over all $\mathbb{Q}_v$.
 
-Necessity of this result is clear, so we only need to consider sufficiency.
-
-
+The necessity of this result is clear, so we only need to consider sufficiency.
 
 We can take a rational number $a$ represented by $f$.
 
-Then $f$ represents $a$ over all $\mathbb Q_v$. Since We have $f$ and $g$ are equivalent over all $\mathbb{Q}_v$, then $g$ represents $a$ over all $\mathbb Q_v$.
+Then $f$ represents $a$ over all $\mathbb Q_v$. Since we have $f$ and $g$ are equivalent over all $\mathbb{Q}_v$, then $g$ represents $a$ over all $\mathbb Q_v$.
 
 By the Hasse-Minkowski theorem, $a$ can be represented over $\mathbb{Q}$ by both $f$ and $g$. Thus, we can decompose $f \sim f_1 \oplus aZ^2$ and $g \sim g_1 \oplus aZ^2$. (We have $f \sim g$ over all $\mathbb{Q}_v$, and clearly $aZ^2 \sim aZ^2$.) By Witt's cancellation theorem, we know that $f_1 \sim g_1$ over all $\mathbb{Q}_v$. By induction, $f_1 \sim g_1$ over $\mathbb{Q}$. Hence, $f \sim g$ over $\mathbb{Q}$.
 
@@ -149,13 +147,13 @@ It suffices to classify non-degenerate diagonal quadratic forms of rank $n$ with
 
 - The rank is always an invariant.
 
-- Symmetric matrix can always be diagonalized.
+- Symmetric matrices can always be diagonalized.
 
 - Squared factors in the coefficients do not affect the classification of quadratic forms.
 
 On the other hand, by considering the determinant of the matrix, we notice that the image of $\det(A)$ in $K^\times/(K^\times)^2$ is an invariant. We call it the discriminant.
 
-Our work has now been reduced to squared-free, so we need to know its group structure.
+Our work has now been reduced to square-free, so we need to know its group structure.
 
 For $\mathbb{R}$, it's $\{1, -1\}$.
 
@@ -229,8 +227,7 @@ Finally, let us state the conditions for equivalence of quadratic forms over $\m
 **[Next Page]**
 \
 
-
-Non-degenerate quadratic forms of rank n over $\mathbb{Q}_p$ are completely classified by their Hasse invariant and discriminant.
+Non-degenerate quadratic forms of rank $n$ over $\mathbb{Q}_p$ are completely classified by their Hasse invariant and discriminant.
 
 If $f$ and $g$ have the same discriminant $d$ and $\varepsilon$, then they can both represent some $a$. Thus, $f$ can be decomposed as $f_1 \oplus aZ^2$, and similarly for $g$.
 
@@ -241,8 +238,6 @@ A direct calculation shows that $f_1$ and $g_1$ have the same invariants. By ind
 \
 **[Next Page]**
 \
-
-
 
 \
 **[Next Page]**

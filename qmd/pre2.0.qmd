@@ -21,7 +21,7 @@ format:
 
 ### Notations
 
-- $K$: an arbitrary field and $\operatorname{char}K \neq 2$. 
+- $K$: an arbitrary field with $\operatorname{char}K \neq 2$. 
 
 - $X$, $Y$, $Z$: variables.
 
@@ -249,6 +249,8 @@ Two quadratic forms of rank $2$ over $\mathbb Q_{p\neq2}$ are equivalent iff the
 
 ### Binary Quadratic Forms over $\mathbb Q_{p\neq2}$
 
+- Let $f(X,Y)=\alpha X^2+\beta Y^2$
+  - where $\alpha$ is the top row and $\beta$ is the left-most column.
 - $\textcolor{blue}{a}$: Same color, same equivalent class
   - mutually distinct if colored black
 - $\boxed{a}$: Boxed quadratic forms cannot represent $1$
@@ -273,7 +275,7 @@ Two quadratic forms of rank $2$ over $\mathbb Q_{p\neq2}$ are equivalent iff the
 
 : $p \equiv 3 \pmod 4$ {#tbl-disc-p3}
 
-Discriminants of $\alpha X^2+\beta Y^2$ over $\mathbb Q_{p \neq 2}$
+Equivalent classes of nondegenerate quadratic forms over $\mathbb Q_{p \neq 2}$, $n=2$  
 :::
 
 
