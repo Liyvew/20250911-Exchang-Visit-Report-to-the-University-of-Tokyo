@@ -357,7 +357,7 @@ window.Quarto = {
 </ul></li>
 </ul>
 <ul>
-<li>The matrix <span class="math inline">\(A_f=(a_{ij})\)</span> associated with <span class="math inline">\(f\)</span> is Symmetric.
+<li>The matrix <span class="math inline">\(A_f=(a_{ij})\)</span> associated with <span class="math inline">\(f\)</span> is symmetric.
 <ul>
 <li><span class="math inline">\(f(\vec{X})=\vec{X}^TA_f\vec{X}\)</span>.</li>
 </ul></li>
@@ -404,7 +404,7 @@ In the 19th century, mathematicians gradually discovered subtle connections betw
 </div>
 <div class="callout-body-container">
 <div id="thm-gauss" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 2 (Gauss’s Three-Square Theorem)</strong></span> All positive integers except those of the form <span class="math inline">\(4^a(8m-1)\)</span> can be represented as the sum of three squares.</p>
+<p><span class="theorem-title"><strong>Theorem 2 (Gauss’s Three-Square Theorem)</strong></span> A natural number can be expressed as a sum of three squares if and only if it is not of the form <span class="math inline">\(4^a(8b - 1)\)</span> for integers <span class="math inline">\(a \geq 0\)</span>, <span class="math inline">\(b &gt; 0\)</span>.</p>
 </div>
 </div>
 </div>
@@ -443,7 +443,7 @@ With the development of algebraic number theory, mathematicians extended Gauss's
 <section id="representation-of-numbers" class="level3">
 <h3 class="anchored" data-anchor-id="representation-of-numbers">Representation of Numbers</h3>
 <ul>
-<li><span class="math inline">\(f\)</span> represents <span class="math inline">\(a \in K\)</span>: <span class="math inline">\(\exists 0\neq x \in K^n\)</span> s.t. <span class="math inline">\(f(x) = a\)</span>.</li>
+<li><span class="math inline">\(f\)</span> represents <span class="math inline">\(a \in K\)</span>: <span class="math inline">\(\exists x \in K^n \setminus \{0\}\)</span> s.t. <span class="math inline">\(f(x) = a\)</span>.</li>
 </ul>
 <div class="callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
@@ -452,7 +452,7 @@ With the development of algebraic number theory, mathematicians extended Gauss's
 </div>
 <div class="callout-body-container">
 <div id="prp-represent" class="theorem proposition">
-<p><span class="theorem-title"><strong>Proposition 1</strong></span> Let <span class="math inline">\(a \in K^\times\)</span>. TFAE:</p>
+<p><span class="theorem-title"><strong>Proposition 1</strong></span> Let <span class="math inline">\(a \in K^\times\)</span>. The following are equivalent:</p>
 <ul>
 <li><span class="math inline">\(f\)</span> represents <span class="math inline">\(a\)</span></li>
 <li><span class="math inline">\(f \sim f_1 \oplus aZ^2\)</span> where <span class="math inline">\(f_1\)</span> is of rank <span class="math inline">\(\operatorname{rank} f - 1\)</span>.</li>
@@ -475,7 +475,7 @@ With the development of algebraic number theory, mathematicians extended Gauss's
 </div>
 </div>
 <ul>
-<li>Apply Hasse-Minkowski Theorem to <span class="math inline">\(f_a=f \oplus -aZ^2\)</span>.</li>
+<li>Apply the Hasse-Minkowski Theorem to <span class="math inline">\(f_a=f \oplus -aZ^2\)</span>.</li>
 </ul>
 <!--
 
@@ -507,7 +507,7 @@ If a quadratic space $(V, Q)$ has two isometric subspaces $U$ and $W$, then by W
 </div>
 <ul>
 <li><span class="math inline">\((V, Q)\)</span>: A quadratic space.</li>
-<li><span class="math inline">\((U, Q)\)</span> and <span class="math inline">\((W, Q)\)</span>: Isomorphic subspaces.</li>
+<li><span class="math inline">\((U, Q)\)</span> and <span class="math inline">\((W, Q)\)</span>: Isometric subspaces.</li>
 </ul>
 <div id="fig-tikzcd-quiver" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -654,7 +654,7 @@ By diagonalizing via congruence and factoring out squares on the diagonal, we se
 </div>
 <div class="callout-body-container">
 <div id="thm-classification" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 8</strong></span> Two quadratic forms of rank <span class="math inline">\(2\)</span> over <span class="math inline">\(\mathbb Q_{p\neq2}\)</span> are equivalent iff they have the same discriminant <span class="math inline">\(d\)</span> and a common representive number <span class="math inline">\(a\)</span>.</p>
+<p><span class="theorem-title"><strong>Theorem 8</strong></span> Two quadratic forms of rank <span class="math inline">\(2\)</span> over <span class="math inline">\(\mathbb Q_{p\neq2}\)</span> are equivalent iff they have the same discriminant <span class="math inline">\(d\)</span> and a common represented number <span class="math inline">\(a\)</span>.</p>
 </div>
 </div>
 </div>
@@ -678,7 +678,7 @@ By diagonalizing via congruence and factoring out squares on the diagonal, we se
 <ul>
 <li>mutually distinct if colored black</li>
 </ul></li>
-<li><span class="math inline">\(\boxed{a}\)</span>: boxed quadratic forms cannot represent <span class="math inline">\(1\)</span></li>
+<li><span class="math inline">\(\boxed{a}\)</span>: boxed quadratic forms don’t represent <span class="math inline">\(1\)</span></li>
 </ul>
 <div id="tbl-disc" class="quarto-layout-panel anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -1000,7 +1000,7 @@ Table&nbsp;2: Hilbert Symbol of <span class="math inline">\(\mathbb Q_{p\neq2}\)
 <li><p>Then <span class="math inline">\(f \sim f_1 \oplus aZ^2\)</span>, where <span class="math inline">\(f_1\)</span> is of rank <span class="math inline">\(n-1\)</span>. Similarly for <span class="math inline">\(g\)</span>.</p></li>
 <li><p><span class="math inline">\(d\)</span> and <span class="math inline">\(\varepsilon\)</span> of <span class="math inline">\(f_1\)</span> can be determined:</p>
 <ul>
-<li><span class="math inline">\(d(f_1) = a d(f) = a d(g) = d(g_1)\)</span></li>
+<li><span class="math inline">\(d(f_1) = a\cdot d(f) = a\cdot  d(g) = d(g_1)\)</span></li>
 <li><span class="math inline">\(\varepsilon(f_1) = \varepsilon(f) \cdot (a, a d(f)) = \varepsilon(g) \cdot (a, a d(g)) = \varepsilon(g_1)\)</span></li>
 </ul></li>
 <li><p>Thus <span class="math inline">\(f_1, g_1\)</span> share the same <span class="math inline">\(d\)</span> and <span class="math inline">\(\varepsilon\)</span>. QED by induction.</p></li>
@@ -1014,7 +1014,7 @@ Table&nbsp;2: Hilbert Symbol of <span class="math inline">\(\mathbb Q_{p\neq2}\)
 <h2 class="anchored" data-anchor-id="classification-results">Classification Results</h2>
 <section id="classification-of-quadratic-forms-over-mathbbq_p" class="level3">
 <h3 class="anchored" data-anchor-id="classification-of-quadratic-forms-over-mathbbq_p">Classification of Quadratic Forms over <span class="math inline">\(\mathbb{Q}_p\)</span></h3>
-<p>The invariants <span class="math inline">\(d\)</span> and <span class="math inline">\(\varepsilon\)</span> satisfy the following relations:</p>
+<p>The possible pair <span class="math inline">\((d,\varepsilon)\)</span> satisfy the following relations:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -1089,7 +1089,7 @@ Table&nbsp;2: Hilbert Symbol of <span class="math inline">\(\mathbb Q_{p\neq2}\)
 </div>
 </div>
 </div>
-<p>Skeleton of Proof:</p>
+<p>Outline of Proof:</p>
 <ul>
 <li><span class="math inline">\(n=2\)</span>: Fermat’s Two-Square Theorem.</li>
 </ul>
