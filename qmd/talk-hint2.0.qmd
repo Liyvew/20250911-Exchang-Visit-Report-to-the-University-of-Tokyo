@@ -12,14 +12,13 @@ Good [morning/afternoon/evening], everyone. I am Shubin Xue from Beijing Institu
 \
 **[Next Page]**
 \
-
-My presentation will be divided into three main parts:
+My presentation will be divided into two main parts and one appendix:
 
 First, I will discuss the primary motivations and standard approaches to this problem.
 
-Second, I will show the classification of quadratic forms over the field $\mathbb{Q}_p$.
+Second, I will present the classification of quadratic forms over the field $\mathbb{Q}_p$.
 
-The third part is an appendix about classification results and the proof of the Hasse-Minkowski theorem.
+The appendix covering classification results and the proof of the Hasse-Minkowski theorem.
 
 \
 **[Next Page]**
@@ -233,12 +232,6 @@ If $f$ and $g$ have the same discriminant $d$ and $\varepsilon$, then they can b
 
 A direct calculation shows that $f_1$ and $g_1$ have the same invariants. By induction on the rank, $f_1 \sim g_1$, so $f \sim g$.
 
-(My presentation ends here. Thank you for your attention.)
+**Now we already know when two quadratic forms over $\mathbb{Q}$ are completely equivalent.**
 
-\
-**[Next Page]**
-\
-
-\
-**[Next Page]**
-\
+**Unfortunately, I do not have enough time to share the final classification results. I think I'll stop here. Thank you for your attention.**
