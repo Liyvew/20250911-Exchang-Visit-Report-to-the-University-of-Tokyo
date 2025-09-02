@@ -229,16 +229,16 @@ window.Quarto = {
    
   <ul>
   <li><a href="#notations" id="toc-notations" class="nav-link active" data-scroll-target="#notations">Notations</a></li>
+  <li><a href="#quadratic-froms" id="toc-quadratic-froms" class="nav-link" data-scroll-target="#quadratic-froms">Quadratic Froms</a></li>
   <li><a href="#background-and-approaches" id="toc-background-and-approaches" class="nav-link" data-scroll-target="#background-and-approaches">Background and Approaches</a>
   <ul class="collapse">
   <li><a href="#classification-and-representation" id="toc-classification-and-representation" class="nav-link" data-scroll-target="#classification-and-representation">Classification and Representation</a>
   <ul class="collapse">
-  <li><a href="#quadratic-froms" id="toc-quadratic-froms" class="nav-link" data-scroll-target="#quadratic-froms">Quadratic Froms</a></li>
-  <li><a href="#background17-18th-century" id="toc-background17-18th-century" class="nav-link" data-scroll-target="#background17-18th-century">Background(17-18th century)</a></li>
-  <li><a href="#background19-20th-century" id="toc-background19-20th-century" class="nav-link" data-scroll-target="#background19-20th-century">Background(19-20th century)</a></li>
+  <li><a href="#background-17-18th-century" id="toc-background-17-18th-century" class="nav-link" data-scroll-target="#background-17-18th-century">Background (17-18th century)</a></li>
+  <li><a href="#background-19-20th-century" id="toc-background-19-20th-century" class="nav-link" data-scroll-target="#background-19-20th-century">Background (19-20th century)</a></li>
   <li><a href="#representing-numbers" id="toc-representing-numbers" class="nav-link" data-scroll-target="#representing-numbers">Representing Numbers</a></li>
   </ul></li>
-  <li><a href="#local-to-global-principle" id="toc-local-to-global-principle" class="nav-link" data-scroll-target="#local-to-global-principle">Local-to-Global Principle</a>
+  <li><a href="#from-global-to-local" id="toc-from-global-to-local" class="nav-link" data-scroll-target="#from-global-to-local">From Global to Local</a>
   <ul class="collapse">
   <li><a href="#decomposing-quadratic-spaces" id="toc-decomposing-quadratic-spaces" class="nav-link" data-scroll-target="#decomposing-quadratic-spaces">Decomposing quadratic spaces</a></li>
   <li><a href="#f-sim-g-over-mathbbq" id="toc-f-sim-g-over-mathbbq" class="nav-link" data-scroll-target="#f-sim-g-over-mathbbq"><span class="math inline">\(f \sim g\)</span> over <span class="math inline">\(\mathbb{Q}\)</span></a></li>
@@ -246,9 +246,9 @@ window.Quarto = {
   </ul></li>
   <li><a href="#quadratic-forms-over-mathbbq_v" id="toc-quadratic-forms-over-mathbbq_v" class="nav-link" data-scroll-target="#quadratic-forms-over-mathbbq_v">Quadratic Forms over <span class="math inline">\(\mathbb{Q}_v\)</span></a>
   <ul class="collapse">
-  <li><a href="#general-ideas" id="toc-general-ideas" class="nav-link" data-scroll-target="#general-ideas">General Ideas</a>
+  <li><a href="#general-ideas-over-arbitrary-k-operatornamechark2" id="toc-general-ideas-over-arbitrary-k-operatornamechark2" class="nav-link" data-scroll-target="#general-ideas-over-arbitrary-k-operatornamechark2">General Ideas over Arbitrary <span class="math inline">\(K\)</span> <span class="math inline">\((\operatorname{Char}K≠2)\)</span></a>
   <ul class="collapse">
-  <li><a href="#general-ideas-1" id="toc-general-ideas-1" class="nav-link" data-scroll-target="#general-ideas-1">General Ideas</a></li>
+  <li><a href="#general-ideas-over-k" id="toc-general-ideas-over-k" class="nav-link" data-scroll-target="#general-ideas-over-k">General Ideas over <span class="math inline">\(K\)</span></a></li>
   </ul></li>
   <li><a href="#classification-of-quadratic-forms-over-mathbb-r" id="toc-classification-of-quadratic-forms-over-mathbb-r" class="nav-link" data-scroll-target="#classification-of-quadratic-forms-over-mathbb-r">Classification of Quadratic Forms over <span class="math inline">\(\mathbb R\)</span></a>
   <ul class="collapse">
@@ -338,7 +338,7 @@ window.Quarto = {
 <li><p><span class="math inline">\(\mathbb{P}\)</span>: the set of prime numbers.</p>
 <ul>
 <li><span class="math inline">\(p\in\mathbb{P}\)</span>.</li>
-<li><span class="math inline">\(\mathbb Q_p\)</span>: the completion of <span class="math inline">\(\mathbb Q\)</span> at <span class="math inline">\(p\)</span>.</li>
+<li><span class="math inline">\(\mathbb Q_p\)</span>: the completion of <span class="math inline">\(\mathbb Q\)</span> w.r.t. <span class="math inline">\(p\)</span>-adic valuation.</li>
 </ul></li>
 <li><p><span class="math inline">\(\mathbb{V}\)</span>=<span class="math inline">\(\mathbb{P}\cup\{\infty\}\)</span>.</p>
 <ul>
@@ -348,10 +348,6 @@ window.Quarto = {
 <li><p>Denote by the same letter an element and its class modulo.</p></li>
 </ul>
 </section>
-<section id="background-and-approaches" class="level1">
-<h1>Background and Approaches</h1>
-<section id="classification-and-representation" class="level2">
-<h2 class="anchored" data-anchor-id="classification-and-representation">Classification and Representation</h2>
 <section id="quadratic-froms" class="level3">
 <h3 class="anchored" data-anchor-id="quadratic-froms">Quadratic Froms</h3>
 <ul>
@@ -378,8 +374,12 @@ f\oplus g=f(X_1,\cdots,X_n)+g(X_{n+1},\cdots,X_{n+m})
 \]</span></li>
 </ul>
 </section>
-<section id="background17-18th-century" class="level3">
-<h3 class="anchored" data-anchor-id="background17-18th-century">Background(17-18th century)</h3>
+<section id="background-and-approaches" class="level1">
+<h1>Background and Approaches</h1>
+<section id="classification-and-representation" class="level2">
+<h2 class="anchored" data-anchor-id="classification-and-representation">Classification and Representation</h2>
+<section id="background-17-18th-century" class="level3">
+<h3 class="anchored" data-anchor-id="background-17-18th-century">Background (17-18th century)</h3>
 <!-- 
 As early as the early development of number theory, mathematicians began to pay attention to the representation problem of quadratic forms.
 
@@ -410,8 +410,8 @@ In the 19th century, mathematicians gradually discovered subtle connections betw
 </div>
 </div>
 </section>
-<section id="background19-20th-century" class="level3">
-<h3 class="anchored" data-anchor-id="background19-20th-century">Background(19-20th century)</h3>
+<section id="background-19-20th-century" class="level3">
+<h3 class="anchored" data-anchor-id="background-19-20th-century">Background (19-20th century)</h3>
 <!--
 With the development of algebraic number theory, mathematicians extended Gauss's ideas to the field of rational numbers. By utilizing the properties of "local fields" (the real numbers and $p$-adic fields), they further strengthened the logical connection between classification and representation of numbers.
 -->
@@ -486,8 +486,8 @@ With the development of algebraic number theory, mathematicians extended Gauss's
 -->
 </section>
 </section>
-<section id="local-to-global-principle" class="level2">
-<h2 class="anchored" data-anchor-id="local-to-global-principle">Local-to-Global Principle</h2>
+<section id="from-global-to-local" class="level2">
+<h2 class="anchored" data-anchor-id="from-global-to-local">From Global to Local</h2>
 <section id="decomposing-quadratic-spaces" class="level3 fragile">
 <h3 class="fragile anchored" data-anchor-id="decomposing-quadratic-spaces">Decomposing quadratic spaces</h3>
 <!--
@@ -589,16 +589,16 @@ Figure&nbsp;1: Witt’s Cancellation Theorem
 </section>
 <section id="quadratic-forms-over-mathbbq_v" class="level1">
 <h1>Quadratic Forms over <span class="math inline">\(\mathbb{Q}_v\)</span></h1>
-<section id="general-ideas" class="level2">
-<h2 class="anchored" data-anchor-id="general-ideas">General Ideas</h2>
-<section id="general-ideas-1" class="level3">
-<h3 class="anchored" data-anchor-id="general-ideas-1">General Ideas</h3>
+<section id="general-ideas-over-arbitrary-k-operatornamechark2" class="level2">
+<h2 class="anchored" data-anchor-id="general-ideas-over-arbitrary-k-operatornamechark2">General Ideas over Arbitrary <span class="math inline">\(K\)</span> <span class="math inline">\((\operatorname{Char}K≠2)\)</span></h2>
+<section id="general-ideas-over-k" class="level3">
+<h3 class="anchored" data-anchor-id="general-ideas-over-k">General Ideas over <span class="math inline">\(K\)</span></h3>
 <ul>
 <li><p>Reduce to classifying non-degenerate rank <span class="math inline">\(n\)</span> quadratic forms of the shape <span class="math inline">\(f \sim \sum_{i=1}^n a_i X_i^2\)</span>, where <span class="math inline">\(a_i\in K^\times/(K^\times)^2\)</span>.</p>
 <ul>
 <li><p>Invariant rank: non-degenerate.</p></li>
 <li><p>Symmetric matrices: diagonal.</p></li>
-<li><p><span class="math inline">\(\sum a_i b_i^2 X_i^2 \sim \sum a_i X_i^2\)</span>: squared-free.</p></li>
+<li><p><span class="math inline">\(\sum a_i b_i^2 X_i^2 \sim \sum a_i X_i^2\)</span>: square-free.</p></li>
 </ul></li>
 </ul>
 <ul>
@@ -789,7 +789,7 @@ By diagonalizing via congruence and factoring out squares on the diagonal, we se
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-tbl" id="tbl-disc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: Equivalent classes of nondegenerate quadratic forms over <span class="math inline">\(\mathbb Q_{p \neq 2}\)</span>, <span class="math inline">\(n=2\)</span>
+Table&nbsp;1: Discriminants of <span class="math inline">\(\alpha X^2+\beta Y^2\)</span> over <span class="math inline">\(\mathbb Q_{p \neq 2}\)</span>
 </figcaption>
 </figure>
 </div>
@@ -1089,16 +1089,16 @@ Table&nbsp;2: Hilbert Symbol of <span class="math inline">\(\mathbb Q_{p\neq2}\)
 </div>
 <p>Skeleton of Proof:</p>
 <ul>
-<li>n=2: Fermat’s Two-Square Theorem.</li>
+<li><span class="math inline">\(n=2\)</span>: Fermat’s Two-Square Theorem.</li>
 </ul>
 <ul>
-<li>n=3：Gauss’s Three-Square Theorem.</li>
+<li><span class="math inline">\(n=3\)</span>：Gauss’s Three-Square Theorem.</li>
 </ul>
 <ul>
-<li>n=4：Lagrange’s Four-Square Theorem.</li>
+<li><span class="math inline">\(n=4\)</span>：Lagrange’s Four-Square Theorem.</li>
 </ul>
 <ul>
-<li>n≥5: Mathematical induction.</li>
+<li><span class="math inline">\(n\geq5\)</span>: Mathematical induction.</li>
 </ul>
 
 
