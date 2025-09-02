@@ -121,11 +121,11 @@
     ]
   },
   {
-    "objectID": "qmd/pre2.0.html#general-ideas-over-arbitrary-k-operatornamechark2",
-    "href": "qmd/pre2.0.html#general-ideas-over-arbitrary-k-operatornamechark2",
+    "objectID": "qmd/pre2.0.html#general-ideas-over-arbitrary-k-operatornamecharkneq2",
+    "href": "qmd/pre2.0.html#general-ideas-over-arbitrary-k-operatornamecharkneq2",
     "title": "Classification of Quadratic Forms over \\(\\mathbb Q\\)",
-    "section": "General Ideas over Arbitrary \\(K\\) \\((\\operatorname{Char}K≠2)\\)",
-    "text": "General Ideas over Arbitrary \\(K\\) \\((\\operatorname{Char}K≠2)\\)\n\nGeneral Ideas over \\(K\\)\n\nReduce to classifying non-degenerate rank \\(n\\) quadratic forms of the shape \\(f \\sim \\sum_{i=1}^n a_i X_i^2\\), where \\(a_i\\in K^\\times/(K^\\times)^2\\).\n\nInvariant rank: non-degenerate.\nSymmetric matrices: diagonal.\n\\(\\sum a_i b_i^2 X_i^2 \\sim \\sum a_i X_i^2\\): square-free.\n\n\n\nIf \\(f \\sim g\\), \\(\\det(A_f) = \\det(P^T A_g P) = \\det(A_g) \\det(P)^2\\)\n\nInvariant discriminant: \\(d = \\det(A)\\) in \\(K^\\times/(K^\\times)^2\\).\n\n\n\n\\(\\mathbb{R}^\\times / (\\mathbb{R}^\\times)^2 \\cong \\{1, -1\\}\\).\n\\(\\mathbb{Q}_p^\\times / (\\mathbb{Q}_p^\\times)^2 \\cong K_4 = \\{1, a, p, ap\\}\\).",
+    "section": "General Ideas over Arbitrary \\(K\\) \\((\\operatorname{Char}K\\neq2)\\)",
+    "text": "General Ideas over Arbitrary \\(K\\) \\((\\operatorname{Char}K\\neq2)\\)\n\nGeneral Ideas over \\(K\\)\n\nReduce to classifying non-degenerate rank \\(n\\) quadratic forms of the shape \\(f \\sim \\sum_{i=1}^n a_i X_i^2\\), where \\(a_i\\in K^\\times/(K^\\times)^2\\).\n\nInvariant rank: non-degenerate.\nSymmetric matrices: diagonal.\n\\(\\sum a_i b_i^2 X_i^2 \\sim \\sum a_i X_i^2\\): square-free.\n\n\n\nIf \\(f \\sim g\\), \\(\\det(A_f) = \\det(P^T A_g P) = \\det(A_g) \\det(P)^2\\)\n\nInvariant discriminant: \\(d = \\det(A)\\) in \\(K^\\times/(K^\\times)^2\\).\n\n\n\n\\(\\mathbb{R}^\\times / (\\mathbb{R}^\\times)^2 \\cong \\{1, -1\\}\\).\n\\(\\mathbb{Q}_p^\\times / (\\mathbb{Q}_p^\\times)^2 \\cong K_4 = \\{1, a, p, ap\\}\\).",
     "crumbs": [
       "Qmd",
       "Classification of Quadratic Forms over $\\mathbb Q$"
