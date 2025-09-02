@@ -182,7 +182,7 @@ Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q$ are equivalent i
 
 # Quadratic Forms over $\mathbb{Q}_v$
 
-## General Ideas over Arbitrary $K$ $(\operatorname{Char}K≠2)$
+## General Ideas over Arbitrary $K$ $(\operatorname{Char}K\neq2)$
 
 ### General Ideas over $K$
 
