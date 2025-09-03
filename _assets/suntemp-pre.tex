@@ -11,11 +11,12 @@
 }{
     \zhfalse
     \documentclass[fontset=fandol,envcountsect]{beamer}
-    \usepackage{xeCJK}
     \def\transmodified{Last modified on}
     \def\transtoc{Table of Contents}
     \def\transreferences{References}
 }
+
+\usepackage{diagbox}
 
 % --- pandoc ---
 
@@ -165,12 +166,6 @@ $endif$
 % --- structures ---
 
 $if(toc)$
-\AtBeginSection[]
-{
-  \begin{frame}{\transtoc}
-    \tableofcontents[currentsection]
-  \end{frame}
-}
 \AtBeginSubsection[]
 {
   \begin{frame}{\transtoc}
