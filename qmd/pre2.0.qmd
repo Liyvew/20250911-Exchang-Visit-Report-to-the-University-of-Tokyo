@@ -190,7 +190,7 @@ Witt's Cancellation Theorem
 ### $f \sim g$ over $\mathbb{Q}$
 
 :::{#thm-q-classification}
-## Hasse-Minkowski
+## Minkowski
 Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q$ are equivalent iff they are equivalent over each $\mathbb{Q}_v$.
 :::
 
@@ -265,7 +265,9 @@ By diagonalizing via congruence and factoring out squares on the diagonal, we se
 Two binary quadratic forms over $\mathbb Q_{p}$ for $p\neq2$ are equivalent if and only if they have the same discriminant $d$ and a comman  represented number $a$.
 :::
 
-\vspace{0.7cm}
+Proof:
+
+\vspace{0.4cm}
 
 - Take $a$ represented by $f$.
 
