@@ -3,7 +3,6 @@ title: Classification of Quadratic Forms over $\mathbb Q$
 author: "Shubin Xue"
 institute: Beijing Institute of Technology
 date: "2025/09/11"
-bibliography: index.bib
 lang: en
 
 abstract: "A reading guidance of the first part of J. P. Serre's *A Course in Arithmetic*"
@@ -257,7 +256,7 @@ Two binary quadratic forms over $\mathbb Q_{p}$ for $p\neq2$ are equivalent if a
 
 - Then $f_1=adX^2$. Thus $f$ is determined. Similarly for $g$.
 
-### Binary Quadratic Forms over $\mathbb Q_{p\neq2}$
+### Binary Quadratic Forms over $\mathbb Q_{p}$ for $p\neq2$
 
 In the following table:
 
@@ -332,7 +331,7 @@ $$
 
 : $p \equiv 3 \pmod 4$ {#tbl-disc-p3}
 
-Hilbert Symbol of $\mathbb Q_{p\neq2}$
+Hilbert Symbol of $\mathbb Q_{p}$ for $p \neq 2$
 :::
 
 - Hilbert symbol is a symmetric non-degenerate bilinear form.
