@@ -11,7 +11,6 @@ abstract: "A reading guidance of the first part of J. P. Serre's *A Course in Ar
 slide-level: 3
 
 format:
-  html: default
   beamer:
     toc: true
     custom-color:
@@ -22,40 +21,36 @@ format:
 ### Notations
 
 - $K$: an arbitrary field with $\operatorname{char}K \neq 2$. 
-
+\vspace{0.3cm}
 - $X$, $Y$, $Z$: variables.
-
-- $\mathbb{P}$: the set of prime numbers.
-    - $p\in\mathbb{P}$.
-    - $\mathbb Q_p$: the completion of $\mathbb Q$ w.r.t. $p$-adic valuation.
-
-- $\mathbb{V}$=$\mathbb{P}\cup\{\infty\}$.
-    - $v\in\mathbb{V}$.
-    - $\mathbb Q_\infty=\mathbb{R}$
-
-- Denote by the same letter an element and its class modulo. 
+\vspace{0.3cm}
+- $\mathbb{V} = \{v:v\in\mathbb{V}\} = \{p: \text{prime number}\} \cup \{\infty\}$.
+\vspace{0.3cm}
+- $\mathbb{Q}_v$: the completion of $\mathbb{Q}$
+    - $\mathbb{Q}_\infty = \mathbb{R}$
+    - $\mathbb{Q}_p$: with respect to the $p$-adic valuation.
 
 ### Quadratic Froms
 
 - $f(\vec{X})=\sum_{i,j=1}^n a_{ij} X_i X_j$ is a quadratic form
-    - $\vec{X}=(X_1,\cdots,X_n)\in K^n$ and $a_{ij}=a_{ji}\in K$.
+    \vspace{0.1cm}
+    - $a_{ij}=a_{ji}\in K$.
+    \vspace{0.1cm}
+    - $\vec{X}=(X_1,\cdots,X_n)\in K^n$
 
 \vspace{0.5cm}
 
 - The matrix $A_f=(a_{ij})$ associated with $f$ is symmetric. 
-    - $f(\vec{X})=\vec{X}^TA_f\vec{X}$.
+
+\vspace{0.5cm}
+
+- $f \sim g$: $\exists P\in GL(n,K)$ s.t. $A_f=P^TA_gP$.
 
 \vspace{0.5cm}
 
 - The pair $(K^n, f)$ is a quadratic space.
-    - $f \sim g$: $\exists P\in GL(n,K)$ s.t. $A_f=P^TA_gP$.
 
-\vspace{0.5cm}
-
-- $f(X_1,\cdots,X_n)$ and $g(X_1,\cdots,X_m)$
-$$
-f\oplus g=f(X_1,\cdots,X_n)+g(X_{n+1},\cdots,X_{n+m})
-$$
+    - $f(X_1,\cdots,X_n)$ and $g(X_1,\cdots,X_m)$
 
 # Background and Approaches
 
@@ -67,6 +62,9 @@ As early as the early development of number theory, mathematicians began to pay 
 
 In the 19th century, mathematicians gradually discovered subtle connections between these problems.
 -->
+
+- $f$ represents $a \in K$: $\exists x \in K^n \setminus \{0\}$ s.t. $f(x) = a$.
+
 :::{#thm-fermat}
 ## Fermat's Two-Square Theorem
 An odd prime $p$ can be represented as the sum of two squares if and only if $p\equiv1\pmod{4}$.
@@ -76,7 +74,14 @@ An odd prime $p$ can be represented as the sum of two squares if and only if $p\
 
 :::{#thm-gauss}
 ## Gauss's Three-Square Theorem 
-A natural number can be expressed as a sum of three squares if and only if it is not of the form $4^a(8b - 1)$ for integers $a \geq 0$, $b > 0$.
+A natural number can be represented as a sum of three squares if and only if it is not of the form $4^a(8b - 1)$ for integers $a \geq 0$, $b > 0$.
+:::
+
+\vspace{0.3cm}
+
+:::{#thm-lagrange}
+## Lagrange's Four Square Theorem
+Every natural number can be expressed as the sum of at most four squares.
 :::
 
 ### Background (19-20th Century)
@@ -84,8 +89,7 @@ A natural number can be expressed as a sum of three squares if and only if it is
 With the development of algebraic number theory, mathematicians extended Gauss's ideas to the field of rational numbers. By utilizing the properties of "local fields" (the real numbers and $p$-adic fields), they further strengthened the logical connection between classification and representation of numbers.
 -->
 
-:::{#thm-gauss-classification}
-## Gauss's Classification of Quadratic Forms
+:::{#prp-gauss-classification}
 Quadratic forms in the same equivalence class represent exactly the same set of numbers.
 :::
 
@@ -98,7 +102,9 @@ $f$ represents $0$ over $\mathbb Q$ iff it represents $0$ over all $\mathbb Q_v$
 
 ### Representation of Numbers
 
-- $f$ represents $a \in K$: $\exists x \in K^n \setminus \{0\}$ s.t. $f(x) = a$.
+$f(X_1,\cdots,X_n)$ and $g(X_1,\cdots,X_m)$
+
+- $f\oplus g=f(X_1,\cdots,X_n)+g(X_{n+1},\cdots,X_{n+m})$
 
 :::{#prp-represent}
 Let $a \in K^\times$. The following are equivalent:
@@ -165,7 +171,7 @@ Witt's Cancellation Theorem
 ### $f \sim g$ over $\mathbb{Q}$
 
 :::{#thm-q-classification}
-## [@serre_course_1973] p. 44, chap. 4, sec. 3.3, theorem 9
+## Hasse-Minkowski
 Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q$ are equivalent iff they are equivalent over each $\mathbb{Q}_v$.
 :::
 - Suppose $f \sim g$ over $\mathbb{Q}_v$ for all $v$. Take $a$ represented by $f$ over $\mathbb{Q}$.
@@ -182,7 +188,7 @@ Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q$ are equivalent i
 
 # Quadratic Forms over $\mathbb{Q}_v$
 
-## General Ideas over Arbitrary $K$ $(\operatorname{Char}K\neq2)$
+## General Ideas over Arbitrary $K$
 
 ### General Ideas over $K$
 
@@ -202,7 +208,8 @@ Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q$ are equivalent i
 \vspace{0.5cm}
 
 - $\mathbb{R}^\times / (\mathbb{R}^\times)^2 \cong \{1, -1\}$.
-- $\mathbb{Q}_p^\times / (\mathbb{Q}_p^\times)^2 \cong K_4 = \{1, a, p, ap\}$.
+- $\mathbb{Q}_p^\times / (\mathbb{Q}_p^\times)^2 \cong K_4 = \{1, a, p, ap\}$ ($p\neq2$).
+- $\mathbb{Q}_2^\times / (\mathbb{Q}_2^\times)^2 \cong (\mathbb Z/2\mathbb Z)\times (\mathbb Z/2\mathbb Z)\times (\mathbb Z/2\mathbb Z)$.
 
 
 ## Classification of Quadratic Forms over $\mathbb R$
@@ -229,10 +236,13 @@ By diagonalizing via congruence and factoring out squares on the diagonal, we se
 
 ## Invariants that Determine the Representation over $\mathbb Q_p$
 
-### Binary Quadratic Forms over $\mathbb Q_{p\neq2}$
+### Binary Quadratic Forms over $\mathbb Q_{p}$ for $p\neq2$
 
 :::{#thm-classification}
-Two quadratic forms of rank $2$ over $\mathbb Q_{p\neq2}$ are equivalent iff they have the same discriminant $d$ and a common represented number $a$.
+
+## Classification of Binary Quadratic Forms over $\mathbb Q_{p}$ for $p\neq2$
+
+Two binary quadratic forms over $\mathbb Q_{p}$ for $p\neq2$ are equivalent if and only if they have the same discriminant $d$ and both represent $1$ or both do not represent $1$.
 :::
 
 \vspace{0.7cm}
@@ -347,16 +357,17 @@ Hilbert Symbol of $\mathbb Q_{p\neq2}$
 
 - $\varepsilon(f)=\prod_{1\leq i<j\leq n}(a_i,a_j)=\varepsilon(f_1)\cdot(a_1,a_2\cdots a_n)=\varepsilon(f_1)\cdot(a_1,a_1d(f))$.
 
-### Condition for a Quadratic Form to Represent $0$ or $a$ over $\mathbb Q_p$
+### Representation of Numbers over $\mathbb Q_p$
 
 <!--*This involves a lot of tedious casework, so we will omit all details due to time constraints.-->
 
 
-- $f$ represents $0$ iff:
-    - For $n=2$: $d=-1$;
-    - For $n=3$: $(-1,-d)= \varepsilon$;
-    - For $n=4$: $d \neq 1$ or $d=1$ and $\varepsilon = (-1,-1)$;
-    - For $n\geq5$: no conditions.
+$f$ represents $0$ over $\mathbb Q_p$ iff:
+
+- For $n=2$: $d=-1$;
+- For $n=3$: $(-1,-d)= \varepsilon$;
+- For $n=4$: $d \neq 1$ or $d=1$ and $\varepsilon = (-1,-1)$;
+- For $n\geq5$: no conditions.
 
 \vspace{0.5cm}
 
@@ -364,11 +375,12 @@ By applying the result to $f_a=f \oplus -aZ^2$, we obtain:
 
 \vspace{0.5cm}
 
-- $f$ represents $a\in \mathbb Q_p^\times/(\mathbb Q_p^\times)^2$ iff:
-    - For $n=1$: $a=d$;
-    - For $n=2$: $( a,-d ) = \varepsilon$;
-    - For $n=3$: $a \neq d$ or $a=d$ and $\varepsilon = ( -1,-d )$;
-    - For $n\geq4$: no conditions.
+$f$ represents $a\in \mathbb Q_p^\times$ iff:
+
+- For $n=1$: $a=d$;
+- For $n=2$: $( a,-d ) = \varepsilon$;
+- For $n=3$: $a \neq d$ or $a=d$ and $\varepsilon = ( -1,-d )$;
+- For $n\geq4$: no conditions.
 
 
 <!--Therefore, the set of numbers represented by a quadratic form $f$ is completely determined by its discriminant and Hasse invariant.-->
@@ -378,8 +390,6 @@ By applying the result to $f_a=f \oplus -aZ^2$, we obtain:
 ### $f \sim g$ over $\mathbb{Q}_p$
 
 :::{#thm-qp-classification}
-## [@serre_course_1973] p. 39, chap. 4, sec. 2.3, theorem 7
-
 Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q_p$ are equivalent iff they have the same discriminant $d$ and Hasse invariant $\varepsilon$.
 :::
 
@@ -394,41 +404,44 @@ Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q_p$ are equivalent
 
 - Thus $f_1, g_1$ share the same $d$ and $\varepsilon$. QED by induction.
 
-# Appendix
+# Classification Results
 
 ## Classification Results
 
 ### Classification of Quadratic Forms over $\mathbb{Q}_p$
 
-The possible pair $(d,\varepsilon)$ satisfy the following relations:
+Fix $(d,\varepsilon)$, all possible quadratic forms  over $\mathbb{Q}_p$:
 
-:::: {.columns}
-::: {.column width="50%"}
+\vspace{0.2cm}
 
-- For $n=1$: $\varepsilon=1$;
-
-- For $n=2$: $d\neq-1$ or $\varepsilon=1$;
-
-- For $n\geq3$: no conditions.
-:::
-::: {.column width="50%"}
 - $n=1$: $f=dX^2$
 
-- $n=2$: $f=aX^2+adY^2$
+\vspace{0.2cm}
 
-- $n=3$: $f=g\oplus aZ^2$ 
-    - $d(g)=ad$ 
-    - $\varepsilon(g)=\varepsilon(a,-d)$
-:::
-::::
+- $n=2$: $f=aX^2+adY^2$, for
 
-- $n>3$: $f=g(X_1,X_2,X_3)\oplus X_4^2\oplus\cdots\oplus X_n^2$
-    - $d(g)=d$ and $\varepsilon(g)=\varepsilon$
+    \vspace{0.1cm}
+
+    - $a\in\mathbb{Q}_p^\times / (\mathbb{Q}_p^\times)^2$
+
+\vspace{0.2cm}
+
+- $n\geq3$: $f=aX_1^2+bX_2^2+abdX_3^2+\sum X_{i>3}$, for
+
+    \vspace{0.1cm}
+
+    - $a: a\neq d$
+
+    \vspace{0.1cm}
+
+    - $b: (b,-ad)\cdot(a,-d)=\varepsilon$
 
 ### Classification of Quadratic Forms over $\mathbb{Q}$
 
 :::{#thm-product-formula}
-## Product formula
+
+## Product Formula
+
 $(a,b)_v=1$ for almost all $v\in \mathbb{V}$ and $\prod_{v\in\mathbb{V}}(a,b)_v=1$
 :::
 
@@ -454,17 +467,16 @@ The invariants $d_v$ and $\varepsilon_v$ satisfy the following relations:
 
 - $\varepsilon_\infty=(-1)^{s(s-1)/2}$
 
+## Hasse-Minkowski Theorem
 
-## Proof of Hasse-Minkowski Theorem
-
-### Skeleton of Proof
+### Outline of Proof
 
 :::{#thm-hasse-minkowski}
+
 ## Hasse-Minkowski
+
 $f$ represents $0$ over $\mathbb Q$ iff it represents $0$ over $\mathbb R$ and all $\mathbb Q_p$.
 :::
-
-Outline of Proof:
 
 \vspace{0.2cm}
 
