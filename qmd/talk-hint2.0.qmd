@@ -4,7 +4,8 @@ author: Shubin Xue
 lang: en
 
 format:
-  pdf: default
+  pdf: 
+    fontsize: 12pt
 ---
 
 Good [morning/afternoon/evening], everyone. I am Shubin Xue from Beijing Institute of Technology. Today, it’s my pleasure to present the **Classification of Quadratic Forms over $\mathbb{Q}$**.
@@ -48,7 +49,15 @@ Before we begin, let me outline some notation:
   - We say $f$ is equivalent to $g$ if their matrices are congruent.
   - The quadratic forms are equivalent if and only if the spaces are isomorphic.
 
-Now, what is the classification of quadratic forms over $Q$? 
+\
+**[Next Page]**
+\
+
+The case over $\mathbb{R}$ is well-konwn.
+
+The classification over $\mathbb{R}$ is completely determined by the rank and the signature, which is the Sylvester's law of inertia.
+
+So, the problem is: how do we classify quadratic forms over $\mathbb{Q}$?
 
 \
 **[Next Page]**
@@ -65,6 +74,8 @@ We say $f$ represents a element if there is a nonzero $x$ such that $f$ of $x$ i
 As early as the early development of number theory, mathematicians began to pay attention to the problem of representing numbers by quadratic forms.
 
 In the 17th century, Fermat proposed the two-square theorem, an odd prime $p$ can be represented as the sum of two squares if and only if $p\equiv 1$ (modolo 4). Gauss prove the three-square theorem. And Lagrange show that every natural number can be represented as the sum of at most four squares.
+
+The sum of squares problem is actually the representation problem for diagonal quadratic forms with coefficient 1.
 
 But unfortunately, the connection between the representation problem and the classification problem was not yet noticed.
 
@@ -163,18 +174,6 @@ And for $\mathbb{Q}_2$, it's the $\mathbb Z$ mod two cubed.
 **[Next Page]**
 \
 
-The case over $\mathbb{R}$ is well-konwn.
-
-\
-**[Next Page]**
-\
-
-The classification over $\mathbb{R}$ is completely determined by the rank and the signature, which is the Sylvester's law of inertia.
-
-\
-**[Next Page]**
-\
-
 In order to classify the forms over $\mathbb Q_p$, we need to introduce an invariant.
 
 \
@@ -208,6 +207,10 @@ From the table, we can see that when the discriminant $d$ is fixed, the classifi
 We know, $f$ representing 1 is equivalent to $Z^2-aX^2-bY^2$ representing 0.
 
 This leads us to define another invariant: the Hilbert symbol.
+
+\
+**[Next Page]**
+\
 
 In the previous table, the boxed entry have Hilbert symbol $-1$, so we can directly read off the value of the Hilbert symbol.
 
@@ -253,10 +256,6 @@ By induction on the rank, $f_1$ is equivalent to $g_1$, so $f$ is equivalent to 
 
 Now we already know when two quadratic forms over $\mathbb{Q}$ are completely equivalent. 
 
-**But we have not gotten the classification.**
-
-**Unfortunately, I do not have enough time to share the final classification results. I think I'll stop here. Thank you for your attention.**
-
 But what possible equivalence classes exist over $\mathbb{Q}$ and $\mathbb{Q}_p$?
 
 \
@@ -282,13 +281,5 @@ The puoduct formula tell us the Hilbert symbol take 1 for almost $v$, and the pr
 The second condition from results over $\mathbb Q_p$.
 
 And the last three conditions from the results over $\mathbb R$.
-
-**I think I'll stop here. This completes the classification of quadratic forms over $\mathbb{Q}$. Thank you.**
-
-\
-**[Next Page]**
-\
-
-The essential idea behind the proof of the Hasse-Minkowski theorem corresponds, for $n=2,3,4$, to the famous historical results: Fermat's two-square theorem, Gauss's three-square theorem, and Lagrange's four-square theorem, respectively. When $n \geq 5$, the proof is completed using mathematical induction.
 
 **I think I'll stop here. This completes the classification of quadratic forms over $\mathbb{Q}$. Thank you.**

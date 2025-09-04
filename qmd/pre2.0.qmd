@@ -18,7 +18,7 @@ format:
         \definecolor{LightCream}{RGB}{255, 253, 240}
         \definecolor{LightGreen}{RGB}{143, 191, 143}
         \definecolor{MagicBlue}{RGB}{63, 81, 181}
-        \definecolor{MagicGreen}{RGB}{43, 81, 61}
+        \definecolor{MagicGreen}{RGB}{63, 81, 61}
         \definecolor{Remark}{RGB}{0, 128, 128}
       remark: |
         MagicGreen
@@ -63,11 +63,31 @@ format:
     \vspace{0.1cm}
     - $f \sim g \iff (K^n,f) \cong (K^n,g)$.
 
+### Case over $\mathbb R$
+
+- Invariants:
+    - Rank: $\operatorname{rank}f = n$.
+    - Signature: $(r,s):=(\#\text{positive eigenvalues},\#\text{negative eigenvalues})$.
+
+\vfill
+
+:::{#thm-Sylvester}
+## Sylvester’s Law of Inertia
+Let $f=\sum_{i,j=1}^na_{ij}X_iX_j$ be a quadratic form of rank $n$ over $\mathbb R$. Then
+$$
+f\sim X_1^2+X_2^2+\cdots+X_r^2-X_{r+1}^2-\cdots-X_{r+s}^2.
+$$
+:::
+
 \vfill
 
 $$
-\Large{\textcolor{green!40!black}{\boxed{\text{\bfseries Classification of Quadratic Forms over $\mathbb Q$?}}}}
+{\textcolor{green!40!black}{\boxed{\text{\bfseries Problem: How to Classify Quadratic Forms over $\mathbb Q$?}}}}
 $$
+
+<!--
+By diagonalizing via congruence and factoring out squares on the diagonal, we see that the only invariants for classifying real quadratic forms are:
+-->
 
 # Classification and Representation
 
@@ -194,13 +214,9 @@ Witt's Cancellation Theorem
 Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q$ are equivalent iff they are equivalent over each $\mathbb{Q}_v$.
 :::
 
-- Suppose $f \sim g$ over $\mathbb{Q}_v$ for all $v$, the numbers represented by both $f$ and $g$ over $\mathbb{Q}_v$ is the same.
-
 - By the Hasse-Minkowski Theorem, the numbers represented by both $f$ and $g$ over $\mathbb{Q}$ is also the same.
 
-- Take $a\in \mathbb{Q}$ represented by both $f$ and $g$.
-
-- $f \sim aZ^2 \oplus f_1$ over $\mathbb{Q}$ and $\mathbb{Q}_v$. Similarly for $g$.
+- Take $a$ represented, $f \sim aZ^2 \oplus f_1$ over $\mathbb{Q}$ and $\mathbb{Q}_v$. Similarly for $g$.
 
 - By Witt's cancellation, we have $f_1 \sim g_1$ over $\mathbb{Q}_v$ for all $v \in \mathbb{V}$.
 
@@ -231,29 +247,6 @@ Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q$ are equivalent i
 - $\mathbb{Q}_p^\times / (\mathbb{Q}_p^\times)^2 \cong K_4 = \{1, a, p, ap\}$ ($p\neq2$).
 - $\mathbb{Q}_2^\times / (\mathbb{Q}_2^\times)^2 \cong (\mathbb Z/2\mathbb Z)\times (\mathbb Z/2\mathbb Z)\times (\mathbb Z/2\mathbb Z)$.
 
-
-## Classification of Quadratic Forms over $\mathbb R$
-
-### Case over $\mathbb R$
-
-- Invariants:
-    - Rank: $\operatorname{rank}f = n$.
-    - Signature: $(r,s):=(\#\text{positive eigenvalues},\#\text{negative eigenvalues})$.
-
-\vspace{0.7cm}
-
-:::{#thm-Sylvester}
-## Sylvester’s Law of Inertia
-Let $f=\sum_{i,j=1}^na_{ij}X_iX_j$ be a quadratic form of rank $n$ over $\mathbb R$. Then
-$$
-f\sim X_1^2+X_2^2+\cdots+X_r^2-X_{r+1}^2-\cdots-X_{r+s}^2.
-$$
-:::
-
-<!--
-By diagonalizing via congruence and factoring out squares on the diagonal, we see that the only invariants for classifying real quadratic forms are:
--->
-
 ## Invariants that Determine the Representation over $\mathbb Q_p$
 
 ### Binary Quadratic Forms over $\mathbb Q_{p}$ for $p\neq2$
@@ -265,17 +258,15 @@ By diagonalizing via congruence and factoring out squares on the diagonal, we se
 Two binary quadratic forms over $\mathbb Q_{p}$ for $p\neq2$ are equivalent if and only if they have the same discriminant $d$ and a comman  represented number $a$.
 :::
 
-Proof:
-
-\vspace{0.4cm}
+\vfill
 
 - Take $a$ represented by $f$.
 
-\vspace{0.4cm}
+\vfill
 
 - $f\sim f_1\oplus aZ^2$ where $\operatorname{rank}f_1=1$.
 
-\vspace{0.4cm}
+\vfill
 
 - Then $f_1=adX^2$. Thus $f$ is determined.
 
@@ -456,8 +447,6 @@ Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q_p$ are equivalent
 
 # Classification Results
 
-## Classification Results
-
 ### Classification of Quadratic Forms over $\mathbb{Q}_p$
 
 Fix $(d,\varepsilon)$, all possible quadratic forms  over $\mathbb{Q}_p$:
@@ -517,29 +506,22 @@ The invariants $d_v$ and $\varepsilon_v$ satisfy the following relations:
 
 - $\varepsilon_\infty=(-1)^{s(s-1)/2}$
 
-## Hasse-Minkowski Theorem
+### 
 
-### Outline of Proof
+\vspace{3cm}
 
-:::{#thm-hasse-minkowski}
+\begin{center}
 
-## Hasse-Minkowski
+$\Huge{\textcolor{green!40!black}{\text{\bfseries Thank You!}}}$
 
-$f$ represents $0$ over $\mathbb Q$ iff it represents $0$ over $\mathbb R$ and all $\mathbb Q_p$.
-:::
+\vspace{2cm}
 
-\vspace{0.2cm}
+\textcolor{green!40!black}{\bfseries Shubin Xue}
 
-- $n=2$: Fermat's Two-Square Theorem.
+\scriptsize\
 
-\vspace{0.2cm}
+$\texttt{shubinx@qq.com}$
 
-- $n=3$: Gauss's Three-Square Theorem.
+Beijing Institute of Technology
 
-\vspace{0.2cm}
-
-- $n=4$: Lagrange's Four-Square Theorem.
-
-\vspace{0.2cm}
-
-- $n\geq5$: Mathematical induction.
+\end{center}
