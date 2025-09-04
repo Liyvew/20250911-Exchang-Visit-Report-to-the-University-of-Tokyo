@@ -93,7 +93,7 @@ By diagonalizing via congruence and factoring out squares on the diagonal, we se
 
 ## Some History
 
-### Background (17-18th Century)
+### Background (17-18th Century) {.fragile}
 <!-- 
 As early as the early development of number theory, mathematicians began to pay attention to the representation problem of quadratic forms.
 
@@ -102,26 +102,25 @@ In the 19th century, mathematicians gradually discovered subtle connections betw
 
 $f$ represents $a \in K$: $\exists x \in K^n \setminus \{0\}$ s.t. $f(x) = a$.
 
-\vfill
-
-:::{#thm-fermat}
-## Fermat's Two-Square Theorem
-An odd prime $p$ can be represented as the sum of two squares if and only if $p\equiv1\pmod{4}$.
-:::
-
-\vfill
-
-:::{#thm-gauss}
-## Gauss's Three-Square Theorem 
-A natural number can be represented as a sum of three squares if and only if it is not of the form $4^a(8b - 1)$ for integers $a \geq 0$, $b > 0$.
-:::
-
-\vfill
-
-:::{#thm-lagrange}
-## Lagrange's Four Square Theorem
-Every natural number can be represented as the sum of at most four squares.
-:::
+\begin{center}
+\begin{minipage}[t]{0.3\textwidth}
+\centering
+\includegraphics[width=\linewidth]{Pierre_de_Fermat3.jpg}
+\captionof{figure}{Fermat}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\centering
+\includegraphics[width=\linewidth]{Carl_Friedrich_Gauss_1840_by_Jensen.jpg}
+\captionof{figure}{Gauss}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\centering
+\includegraphics[width=\linewidth]{Joseph_Louis_Lagrange2.jpg}
+\captionof{figure}{Lagrange}
+\end{minipage}
+\end{center}
 
 ### Background (19-20th Century)
 <!--
