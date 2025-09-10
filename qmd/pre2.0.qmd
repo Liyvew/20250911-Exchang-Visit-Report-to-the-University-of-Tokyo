@@ -353,7 +353,7 @@ $ap$ & & & & $1$
 \begin{tabular}{c|rrrr}
 $(\cdot,\cdot)$ & $1$ & $a$ & $p$ & $ap$ \\
 \hline
-$1$  & $1$ & $1$ & $p$ & $a p$ \\
+$1$  & $1$ & $1$ & $1$ & $1$ \\
 $a$  & & $1$ & $-1$ & $-1$ \\
 $p$  & & & $-1$ & $1$ \\
 $ap$ & & & & $-1$
@@ -442,9 +442,15 @@ Two non-degenerate quadratic forms of rank $n$ over $\mathbb Q_p$ are equivalent
 
 \vfill
 
-- Thus $f_1, g_1$ share the same $d$ and $\varepsilon$. QED by induction.
+- Thus $f_1, g_1$ share the same $d$ and $\varepsilon$. 
 
-# Classification Results
+\vfill
+
+- By induction on $n$, the proof is completed.
+
+# Results
+
+## Classifications
 
 ### Classification of Quadratic Forms over $\mathbb{Q}_p$
 
